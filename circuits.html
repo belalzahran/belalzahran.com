@@ -17,6 +17,8 @@
 	<link rel="stylesheet" href="css/style.css">
 
 	<script src="js/modernizr-2.6.2.min.js"></script>
+	<script src="config.js"></script>
+
 </head>
 <body>
 
@@ -44,7 +46,12 @@
 								</li>
 								<li><a href="Experience.html">Experience</a></li>
 								<li><a href="contact.html">Contact</a></li>
-								<li class="btn-cta"><a href="https://drive.google.com/file/d/1mxkkSry5XBKokWf3xBOlPUAAhFdnzcyd/view?usp=sharing" target="_blank"><span>Resume</span></a></li>
+								<li class="btn-cta"><a id="resume-link" href="#" target="_blank"><span>Resume</span></a></li>
+
+								<script>
+									// Dynamically set the resume link
+									document.getElementById('resume-link').href = resumeLink;
+								</script>
 							</ul>
 						</div>
 					</div>
