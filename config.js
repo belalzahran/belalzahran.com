@@ -1,2 +1,2 @@
 
-const resumeLink = "https://drive.google.com/file/d/1GL6zbudqby0zuVkeuwVoh4-7pZELm9RM/view?usp=sharing";
+const resumeLink = "https://drive.google.com/file/d/18VEjNLdACHWQe2Ld9YjHpfRLylHJuqkC/view?usp=sharing";
