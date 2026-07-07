@@ -1,168 +1,136 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>belalzahran.com</title>
+	<title>Kumon Student Tracker — Belal Zahran</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Free HTML5 Website Template by freehtml5.co" />
-	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
-	<meta name="author" content="freehtml5.co" />
-
-	<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
-	<link rel="stylesheet" href="css/animate.css">
-	<link rel="stylesheet" href="css/icomoon.css">
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/flexslider.css">
-	<link rel="stylesheet" href="css/style.css">
-
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<script src="config.js"></script>
+	<meta name="description" content="A tablet-based student check-in system for a Kumon Tutoring Center, built on a Raspberry Pi with a Flask admin dashboard. Still in daily use." />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,100..900,30..100,0..1;1,9..144,100..900,30..100,0..1&family=JetBrains+Mono:wght@400;500&family=Amiri+Quran&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/site.css">
+	<script src="config.js" defer></script>
 </head>
 <body>
 
-	<div class="fh5co-loader"></div>
+<div class="bg-glow" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
 
-	<div id="page">
-		<nav class="fh5co-nav" role="navigation">
-			<div class="top-menu">
-				<div class="container">
-					<div class="row">
-						<div class="col-xs-2">
-							<div id="fh5co-logo"><a href="index.html">belalzahran<span>.</span>com</a></div>
-						</div>
-						<div class="col-xs-10 text-right menu-1">
-							<ul>
-								<li><a href="index.html">Home</a></li>
-								<li class="has-dropdown">
-									<a href="#">Projects</a>
-									<ul class="dropdown">
-										<li><a href="kumonStudentTracker.html">Kumon Student Tracker</a></li>
-										<li><a href="MedicineDispenser.html">Medication Dispenser</a></li>
-										<li><a href="vinflash.html">Vehicle VIN Flasher</a></li>
-										<li><a href="circuits.html">Breadboard Circuits</a></li>
-									</ul>
-								</li>
-								<li><a href="Experience.html">Experience</a></li>
-								<li><a href="contact.html">Contact</a></li>
-								<li class="btn-cta"><a id="resume-link" href="#" target="_blank"><span>Resume</span></a></li>
+<nav class="nav" role="navigation" aria-label="Primary">
+	<a href="index.html" class="nav__brand">belalzahran<i>.</i>com</a>
+	<div class="nav__links">
+		<a href="index.html#work" class="hide-sm is-active">Work</a>
+		<a href="Experience.html">Experience</a>
+		<a href="contact.html">Contact</a>
+		<a href="#" class="nav__resume" id="resume-link" target="_blank" rel="noopener">Resume <span aria-hidden="true">↗</span></a>
+	</div>
+</nav>
 
-								<script>
-									// Dynamically set the resume link
-									document.getElementById('resume-link').href = resumeLink;
-								</script>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</nav>
+<header class="section wrap project-hero">
+	<span class="mono">Project 06 · 2023 · Embedded + Full-Stack</span>
+	<h1>Kumon Student <em>Tracker</em>.</h1>
+	<p class="hero__deck" style="margin-top: 1.5rem; max-width: 60ch;">
+		A tablet sign-in system, SMS parent-notification pipeline, and instructor
+		web dashboard built for a Kumon Tutoring Center — still in daily use
+		managing 150+ students.
+	</p>
+	<div class="project-hero__meta">
+		<div class="hero__meta-cell">
+			<span class="mono">Role</span>
+			<span class="val">Contract Developer</span>
+		</div>
+		<div class="hero__meta-cell">
+			<span class="mono">Stack</span>
+			<span class="val">Raspberry Pi · Python · Flask · MySQL · Twilio</span>
+		</div>
+		<div class="hero__meta-cell">
+			<span class="mono">Repo</span>
+			<span class="val"><a href="https://github.com/belalzahran/KumonApplication" target="_blank" rel="noopener">Private — security</a></span>
+		</div>
+		<div class="hero__meta-cell">
+			<span class="mono">Status</span>
+			<span class="val">Shipped · in production</span>
+		</div>
+	</div>
+</header>
 
-		<div id="fh5co-about">
-			<div class="container">
-				<div class="row animate-box">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-						<h2>Kumon Student Tracker System</h2>
-						<a href="https://github.com/belalzahran/KumonApplication" target="_blank">Github Repository is Private Due to Security Concerns</a>
-						<p>Technologies: RaspberryPi, Python, SQL, JSON, Flask, Twilio API, JavaScript, HTML, CSS</p>
-						<p>Features: Sign in Sign out Tablet, Compatible Web Interface, Students Logs, Application Admin Settings, Twilio SMS Messaging for Parents, Database for Storing Student Records, Real-Time Interactive Student Monitoring Display for Instructors, Fully Implemented GUI for Adding, Removing, and Looking up Students in the Database</p>
-					</div>
-				</div>
-				<div class="row animate-box">
-					<div class="col-md-10 col-md-offset-1 text-center heading-section">
-						<h3>Project Description</h3>
-						<p>During the summer of 2023, I undertook a freelance development project to create a Student Tracker system for a Kumon Tutoring Center. This system was designed to streamline their student data and attendance management process. My role in this project included everything from conceptualization to deployment. This system is still being used today to manage a center with upwards of 150 students!</p>
+<div class="project-body">
+	<h3>The problem</h3>
+	<p>
+		In summer 2023 a local Kumon Tutoring Center asked me to replace their
+		paper-based student check-in — attendance and homework completion were
+		manually tracked, which made parent follow-up slow and logs hard to
+		query after a session.
+	</p>
 
-						<p>Watch the video below to see how my Student Tracker Works!</p>
-						
-						<p>
-							<div class="video-container">
-								<!-- Wistia Embed Code -->
-								<script src="https://fast.wistia.com/embed/medias/xusnpz5oo1.jsonp" async></script>
-								<script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
-								<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
-									<div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
-										<div class="wistia_embed wistia_async_xusnpz5oo1 seo=true videoFoam=true" style="height:100%;position:relative;width:100%">
-											<div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
-												<img src="https://fast.wistia.com/embed/medias/xusnpz5oo1/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" />
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</p>
-						
+	<h3>What I built</h3>
+	<p>
+		A full stack sitting on a Raspberry Pi at the front desk: a tablet-facing
+		touch GUI for sign-in/sign-out, a MySQL database of student records, a
+		Twilio SMS pipeline for parent notifications, and a Flask web
+		interface so instructors could view live and historical data during and
+		after class.
+	</p>
+	<ul>
+		<li>Raspberry Pi + tablet kiosk at the entry</li>
+		<li>Admin-only GUI for adding, removing, and editing student records</li>
+		<li>MySQL schema designed to support multi-year lookups</li>
+		<li>Real-time monitoring display for instructors</li>
+		<li>Twilio integration for parent SMS on arrival / departure</li>
+	</ul>
 
-						<p>The final product utilized a variety of technologies and consists of a Python GUI application programmed on a Raspberry Pi with a tablet interface for easy on-site interaction, a MySQL database, and a custom developed Web Interface as a means for accessing stored data for instructor use. The Web Interface was built using the Flask Framework, Python, HTML, CSS, and Javascript.<br></p>
+	<h3>What it's doing now</h3>
+	<p>
+		The system has been running continuously since deployment and is currently
+		serving a center with more than <em>150 active students</em>. I still get
+		the occasional "a cable came loose" text, which is a lot more fun than
+		it sounds.
+	</p>
+</div>
 
-						<div class="row row-bottom-padded-md">
-							<div class="col-md-12 text-center animate-box">
-								<div class="image-container">
-									<img src="data/Kumon/app.jpg" alt="App Image" class="img-responsive img-rounded">
-								</div>
-							</div>
-						</div>
-
-				
+<div class="project-media">
+	<span class="mono" style="display:block; margin-bottom:1rem;">Demo Video</span>
+	<div class="video" style="padding-bottom: 56.25%;">
+		<script src="https://fast.wistia.com/embed/medias/xusnpz5oo1.jsonp" async></script>
+		<script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+		<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+			<div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+				<div class="wistia_embed wistia_async_xusnpz5oo1 seo=true videoFoam=true" style="height:100%;position:relative;width:100%">
+					<div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
+						<img src="https://fast.wistia.com/embed/medias/xusnpz5oo1/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" />
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+</div>
 
-	<div class="gototop js-top">
-		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
+<div class="project-media">
+	<span class="mono" style="display:block; margin-bottom:1rem;">Application + Home Screen</span>
+	<div class="stack two">
+		<img src="data/Kumon/app.jpg" alt="Kumon tablet app view" loading="lazy">
+		<img src="data/Kumon/homepage.jpg" alt="Kumon instructor dashboard" loading="lazy">
 	</div>
+</div>
 
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery.easing.1.3.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.waypoints.min.js"></script>
-	<script src="js/jquery.flexslider-min.js"></script>
-	<script src="js/main.js"></script>
+<nav class="project-nav wrap" aria-label="Project navigation">
+	<a href="index.html#work">← All Work</a>
+	<a href="MedicineDispenser.html">Next: Medicine Dispenser →</a>
+</nav>
 
-	<style>
-		/* Responsive Video Container */
-		.video-container {
-			position: relative;
-			width: 80%; /* Reduced size to make it smaller */
-			max-width: 700px; /* Cap the max width */
-			padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-			height: 0;
-			overflow: hidden;
-			margin: 0 auto; /* Center the video */
-		}
+<footer class="wrap foot">
+	<span class="mono">© 2026 · Belal Zahran</span>
+	<span class="arabic" aria-label="Alhamdulillah">الحمد لله</span>
+	<span class="mono">Set in Fraunces &amp; JetBrains Mono</span>
+</footer>
 
-		/* Responsive Image Container */
-		.image-container {
-			display: flex;
-			flex-direction: row;
-			flex-wrap: wrap;
-			justify-content: center;
-			gap: 20px;
-			align-items: center;
-		}
-
-		.image-container img {
-			width: 48%; /* Two images side by side, adjusting for small gaps */
-			height: auto;
-			object-fit: cover;
-			border-radius: 10px;
-		}
-
-		/* Media query for mobile devices */
-		@media (max-width: 767px) {
-			.image-container {
-				flex-direction: column;
-				align-items: center;
-			}
-
-			.image-container img {
-				width: 100%; /* Full width for smaller screens */
-				max-width: 300px;
-			}
-		}
-	</style>
+<script>
+if (typeof resumeLink !== 'undefined') {
+	var rl = document.getElementById('resume-link');
+	if (rl) rl.href = resumeLink;
+}
+</script>
 
 </body>
 </html>
