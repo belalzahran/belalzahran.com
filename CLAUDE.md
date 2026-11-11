@@ -13,12 +13,14 @@
 - `contact.html`
 - 4 original project pages: `circuits.html`, `vinflash.html`, `kumonStudentTracker.html`, `MedicineDispenser.html`
 
-## Design System (after 2026-04-16 redesign)
-- "Editorial Terminal" aesthetic
-- Fonts: **Fraunces** variable serif + **JetBrains Mono** + **Amiri Quran** (Arabic signature)
-- Palette: mocha / antique-gold
-- Layout: magazine-cover hero + marquee + editorial project list
+## Design System (after 2026-07-06 redesign)
+- "Engineering Print" aesthetic - pure black & white, no accent color
+- Fonts: **Archivo** variable (wdth 62-125 / wght 100-900, via font-stretch + font-weight) + **IBM Plex Mono** (spec labels) + **Amiri Quran** (Arabic signature)
+- Palette: ink `#0a0a0a` / paper `#fafafa` / hairlines `#e2e2e2` (`#2b2b2b` on ink) / muted `#6f6f6f`
+- Signature motifs: black-plate hero with ghost-outline بلال, full-row black inversion on work-item hover, nav self-inverts via `mix-blend-mode: difference`, all photos `grayscale(1)` until hovered
+- Layout: black plate hero + marquee, white body, hairline title-block meta tables, prev/next p-nav on project pages
 - Stylesheet: `css/site.css`
+- Wistia embeds: `.video` wrapper must NOT carry its own padding-bottom - the inline `wistia_responsive_padding` div handles aspect ratio (double padding = dead space below the player)
 - Old Bootstrap/animate/flexslider CSS files still present but unreferenced — safe to delete if desired
 
 ## Key Files

@@ -8,14 +8,11 @@
 	<meta name="description" content="A touchscreen automated Vehicle Identification Number flasher built for Karma Automotive's commercial vehicle program." />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,100..900,30..100,0..1;1,9..144,100..900,30..100,0..1&family=JetBrains+Mono:wght@400;500&family=Amiri+Quran&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=IBM+Plex+Mono:wght@400;500&family=Amiri+Quran&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/site.css">
 	<script src="config.js" defer></script>
 </head>
 <body>
-
-<div class="bg-glow" aria-hidden="true"></div>
-<div class="grain" aria-hidden="true"></div>
 
 <nav class="nav" role="navigation" aria-label="Primary">
 	<a href="index.html" class="nav__brand">belalzahran<i>.</i>com</a>
@@ -23,39 +20,41 @@
 		<a href="index.html#work" class="hide-sm is-active">Work</a>
 		<a href="Experience.html">Experience</a>
 		<a href="contact.html">Contact</a>
-		<a href="#" class="nav__resume" id="resume-link" target="_blank" rel="noopener">Resume <span aria-hidden="true">↗</span></a>
+		<a href="#" id="resume-link" target="_blank" rel="noopener">Resume <span aria-hidden="true">↗</span></a>
 	</div>
 </nav>
 
-<header class="section wrap project-hero">
-	<span class="mono">Project 07 · 2023 · Embedded + Automotive</span>
-	<h1>Vehicle <em>VIN</em> Flasher.</h1>
-	<p class="hero__deck" style="margin-top: 1.5rem; max-width: 62ch;">
-		A Raspberry-Pi-powered touchscreen flashing rig built for Karma
-		Automotive's commercial vehicle program — replacing a slow, expensive
-		setup with a handheld unit the technicians actually enjoyed using.
-	</p>
-	<div class="project-hero__meta">
-		<div class="hero__meta-cell">
-			<span class="mono">Role</span>
-			<span class="val">Powertrain Controls Intern</span>
-		</div>
-		<div class="hero__meta-cell">
-			<span class="mono">Stack</span>
-			<span class="val">Raspberry Pi · Python · Tkinter · CAN / OBD2</span>
-		</div>
-		<div class="hero__meta-cell">
-			<span class="mono">Client</span>
-			<span class="val">Karma Automotive</span>
-		</div>
-		<div class="hero__meta-cell">
-			<span class="mono">Repo</span>
-			<span class="val"><a href="https://github.com/belalzahran/VinFlasher" target="_blank" rel="noopener">Private — proprietary</a></span>
+<header class="plate">
+	<div class="wrap p-hero">
+		<span class="mono">Project 07 · 2023 · Embedded + Automotive</span>
+		<h1>Vehicle <em>VIN</em> Flasher</h1>
+		<p class="hero__deck" style="max-width: 62ch;">
+			A Raspberry-Pi-powered touchscreen flashing rig built for Karma
+			Automotive's commercial vehicle program — replacing a slow, expensive
+			setup with a handheld unit the technicians actually enjoyed using.
+		</p>
+		<div class="p-meta">
+			<div class="hero__meta-cell">
+				<span class="mono">Role</span>
+				<span class="val">Powertrain Controls Intern</span>
+			</div>
+			<div class="hero__meta-cell">
+				<span class="mono">Stack</span>
+				<span class="val">Raspberry Pi · Python · Tkinter · CAN / OBD2</span>
+			</div>
+			<div class="hero__meta-cell">
+				<span class="mono">Client</span>
+				<span class="val">Karma Automotive</span>
+			</div>
+			<div class="hero__meta-cell">
+				<span class="mono">Repo</span>
+				<span class="val"><a href="https://github.com/belalzahran/VinFlasher" target="_blank" rel="noopener">Private — proprietary</a></span>
+			</div>
 		</div>
 	</div>
 </header>
 
-<div class="project-body">
+<div class="prose">
 	<h3>What I designed</h3>
 	<p>
 		A self-contained VIN-flasher prototype intended to let Karma technicians
@@ -82,14 +81,14 @@
 	</p>
 </div>
 
-<div class="project-media">
-	<span class="mono" style="display:block; margin-bottom:1rem;">Hardware Walkthrough</span>
-	<p style="color: var(--muted); font-size: 0.9rem; margin-bottom: 1.5rem;">
+<div class="media">
+	<span class="mono">Hardware Walkthrough</span>
+	<p class="media__note">
 		Left → right: CAN bus reader wired to an OBD2 port, the touch tablet,
 		the back of the tablet with the Raspberry Pi mounted, and the full
 		physical assembly.
 	</p>
-	<div class="stack two">
+	<div class="grid-2">
 		<img src="data/VIN/1.jpg" alt="CAN bus reader" loading="lazy">
 		<img src="data/VIN/2.jpg" alt="Tablet touch interface" loading="lazy">
 		<img src="data/VIN/3.jpg" alt="Raspberry Pi mounted on tablet back" loading="lazy">
@@ -97,9 +96,9 @@
 	</div>
 </div>
 
-<div class="project-media" style="max-width: 580px;">
-	<span class="mono" style="display:block; margin-bottom:1rem;">Demo Video</span>
-	<div class="video" style="padding-bottom: 133.33%;">
+<div class="media" style="max-width: 38rem;">
+	<span class="mono">Demo Video</span>
+	<div class="video">
 		<script src="https://fast.wistia.com/embed/medias/zh4q6clw0g.jsonp" async></script>
 		<script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
 		<div class="wistia_responsive_padding" style="padding:133.33% 0 0 0;position:relative;">
@@ -114,15 +113,15 @@
 	</div>
 </div>
 
-<nav class="project-nav wrap" aria-label="Project navigation">
+<nav class="p-nav" aria-label="Project navigation">
 	<a href="MedicineDispenser.html">← Medicine Dispenser</a>
 	<a href="circuits.html">Next: Breadboard Circuits →</a>
 </nav>
 
-<footer class="wrap foot">
+<footer class="foot">
 	<span class="mono">© 2026 · Belal Zahran</span>
 	<span class="arabic" aria-label="Alhamdulillah">الحمد لله</span>
-	<span class="mono">Set in Fraunces &amp; JetBrains Mono</span>
+	<span class="mono">Set in Archivo &amp; IBM Plex Mono</span>
 </footer>
 
 <script>

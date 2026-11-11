@@ -8,14 +8,11 @@
 	<meta name="description" content="An IoT automated medication dispenser built on an ESP32 with a Firebase-backed companion web app." />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,100..900,30..100,0..1;1,9..144,100..900,30..100,0..1&family=JetBrains+Mono:wght@400;500&family=Amiri+Quran&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=IBM+Plex+Mono:wght@400;500&family=Amiri+Quran&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/site.css">
 	<script src="config.js" defer></script>
 </head>
 <body>
-
-<div class="bg-glow" aria-hidden="true"></div>
-<div class="grain" aria-hidden="true"></div>
 
 <nav class="nav" role="navigation" aria-label="Primary">
 	<a href="index.html" class="nav__brand">belalzahran<i>.</i>com</a>
@@ -23,39 +20,41 @@
 		<a href="index.html#work" class="hide-sm is-active">Work</a>
 		<a href="Experience.html">Experience</a>
 		<a href="contact.html">Contact</a>
-		<a href="#" class="nav__resume" id="resume-link" target="_blank" rel="noopener">Resume <span aria-hidden="true">↗</span></a>
+		<a href="#" id="resume-link" target="_blank" rel="noopener">Resume <span aria-hidden="true">↗</span></a>
 	</div>
 </nav>
 
-<header class="section wrap project-hero">
-	<span class="mono">Project 08 · 2022 · Hardware + IoT</span>
-	<h1>Automated Medication <em>Dispenser</em>.</h1>
-	<p class="hero__deck" style="margin-top: 1.5rem; max-width: 62ch;">
-		A wirelessly-controllable pill dispenser with an ESP32 brain, a
-		Firebase-synced companion web app, and a working dispense tray — the
-		cure for forgetting whether I took my meds this morning.
-	</p>
-	<div class="project-hero__meta">
-		<div class="hero__meta-cell">
-			<span class="mono">Role</span>
-			<span class="val">Solo · Design → Build → Ship</span>
-		</div>
-		<div class="hero__meta-cell">
-			<span class="mono">Stack</span>
-			<span class="val">ESP32 · PlatformIO · C++ · Firebase · JavaScript</span>
-		</div>
-		<div class="hero__meta-cell">
-			<span class="mono">Repo</span>
-			<span class="val"><a href="https://github.com/belalzahran/MedicationDispenser" target="_blank" rel="noopener">github.com/MedicationDispenser ↗</a></span>
-		</div>
-		<div class="hero__meta-cell">
-			<span class="mono">Year</span>
-			<span class="val">2022</span>
+<header class="plate">
+	<div class="wrap p-hero">
+		<span class="mono">Project 08 · 2022 · Hardware + IoT</span>
+		<h1>Automated Medication <em>Dispenser</em></h1>
+		<p class="hero__deck" style="max-width: 62ch;">
+			A wirelessly-controllable pill dispenser with an ESP32 brain, a
+			Firebase-synced companion web app, and a working dispense tray — the
+			cure for forgetting whether I took my meds this morning.
+		</p>
+		<div class="p-meta">
+			<div class="hero__meta-cell">
+				<span class="mono">Role</span>
+				<span class="val">Solo · Design → Build → Ship</span>
+			</div>
+			<div class="hero__meta-cell">
+				<span class="mono">Stack</span>
+				<span class="val">ESP32 · PlatformIO · C++ · Firebase · JavaScript</span>
+			</div>
+			<div class="hero__meta-cell">
+				<span class="mono">Repo</span>
+				<span class="val"><a href="https://github.com/belalzahran/MedicationDispenser" target="_blank" rel="noopener">github.com/MedicationDispenser ↗</a></span>
+			</div>
+			<div class="hero__meta-cell">
+				<span class="mono">Year</span>
+				<span class="val">2022</span>
+			</div>
 		</div>
 	</div>
 </header>
 
-<div class="project-body">
+<div class="prose">
 	<h3>Why I built it</h3>
 	<p>
 		I had trouble keeping a consistent medication and supplement routine —
@@ -80,9 +79,9 @@
 	</ul>
 </div>
 
-<div class="project-media">
-	<span class="mono" style="display:block; margin-bottom:1rem;">Build Photos</span>
-	<div class="stack two">
+<div class="media">
+	<span class="mono">Build Photos</span>
+	<div class="grid-2">
 		<img src="data/Medicine/1.jpg" alt="Medicine dispenser view 1" loading="lazy">
 		<img src="data/Medicine/2.jpg" alt="Medicine dispenser view 2" loading="lazy">
 		<img src="data/Medicine/3.jpg" alt="Medicine dispenser view 3" loading="lazy">
@@ -90,9 +89,9 @@
 	</div>
 </div>
 
-<div class="project-media" style="max-width: 520px;">
-	<span class="mono" style="display:block; margin-bottom:1rem;">Build + Demo Video</span>
-	<div class="video" style="padding-bottom: 175.9%;">
+<div class="media" style="max-width: 34rem;">
+	<span class="mono">Build + Demo Video</span>
+	<div class="video">
 		<script src="https://fast.wistia.com/embed/medias/vi92ax1fed.jsonp" async></script>
 		<script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
 		<div class="wistia_responsive_padding" style="padding:175.9% 0 0 0;position:relative;">
@@ -107,15 +106,15 @@
 	</div>
 </div>
 
-<nav class="project-nav wrap" aria-label="Project navigation">
+<nav class="p-nav" aria-label="Project navigation">
 	<a href="kumonStudentTracker.html">← Kumon Tracker</a>
 	<a href="vinflash.html">Next: VIN Flasher →</a>
 </nav>
 
-<footer class="wrap foot">
+<footer class="foot">
 	<span class="mono">© 2026 · Belal Zahran</span>
 	<span class="arabic" aria-label="Alhamdulillah">الحمد لله</span>
-	<span class="mono">Set in Fraunces &amp; JetBrains Mono</span>
+	<span class="mono">Set in Archivo &amp; IBM Plex Mono</span>
 </footer>
 
 <script>

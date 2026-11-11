@@ -15,15 +15,12 @@
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,100..900,30..100,0..1;1,9..144,100..900,30..100,0..1&family=JetBrains+Mono:wght@400;500&family=Amiri+Quran&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=IBM+Plex+Mono:wght@400;500&family=Amiri+Quran&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="css/site.css">
 	<script src="config.js" defer></script>
 </head>
 <body>
-
-<div class="bg-glow" aria-hidden="true"></div>
-<div class="grain" aria-hidden="true"></div>
 
 <!-- ==================== NAV ==================== -->
 <nav class="nav" role="navigation" aria-label="Primary">
@@ -32,77 +29,78 @@
 		<a href="#work" class="hide-sm">Work</a>
 		<a href="Experience.html">Experience</a>
 		<a href="contact.html">Contact</a>
-		<a href="#" class="nav__resume" id="resume-link" target="_blank" rel="noopener">Resume <span aria-hidden="true">↗</span></a>
+		<a href="#" id="resume-link" target="_blank" rel="noopener">Resume <span aria-hidden="true">↗</span></a>
 	</div>
 </nav>
 
-<!-- ==================== HERO / MAGAZINE COVER ==================== -->
-<header class="hero wrap" id="top">
-	<div>
-		<div class="hero__masthead">
-			<span class="mono">Vol. IV · Issue 01</span>
-			<span class="mono">MMXXVI · Lake Forest, CA</span>
+<!-- ==================== HERO / BLACK PLATE ==================== -->
+<header class="plate">
+	<div class="hero" id="top">
+		<div class="hero__ghost arabic" aria-hidden="true">بلال</div>
+		<div class="hero__inner">
+			<div class="hero__masthead">
+				<span class="mono">Portfolio · Rev. 2026</span>
+				<span class="mono">Lake Forest, CA · 33.64°N 117.69°W</span>
+			</div>
+
+			<h1 class="hero__title">
+				<span class="l1">Belal</span>
+				<span class="l2">Zahran</span>
+			</h1>
+
+			<p class="hero__deck">
+				Software engineer, compulsive tinkerer, and builder of the
+				overly-specific. I make desktop apps that push hardware,
+				embedded systems that live in kitchens and bedrooms, and
+				ML tools for the things I love.
+			</p>
+
+			<div class="hero__meta">
+				<div class="hero__meta-cell">
+					<span class="mono">Currently</span>
+					<span class="val">Software Engineer, <a href="https://about.meta.com/realitylabs/" target="_blank" rel="noopener">Meta / Reality Labs ↗</a></span>
+				</div>
+				<div class="hero__meta-cell">
+					<span class="mono">Education</span>
+					<span class="val">B.S. Computer Science, UC Irvine</span>
+				</div>
+				<div class="hero__meta-cell">
+					<span class="mono">Working In</span>
+					<span class="val">Python · TypeScript · React · Embedded C</span>
+				</div>
+				<div class="hero__meta-cell">
+					<span class="mono">Elsewhere</span>
+					<span class="val">
+						<a href="https://github.com/belalzahran" target="_blank" rel="noopener">GitHub</a> ·
+						<a href="https://www.linkedin.com/in/belal-zahran-957886210/" target="_blank" rel="noopener">LinkedIn</a>
+					</span>
+				</div>
+			</div>
 		</div>
-
-		<div class="arabic hero__sig" aria-label="Belal Zahran in Arabic">بلال</div>
-
-		<h1 class="display hero__title">
-			<span class="l1">Belal</span>
-			<span class="l2 ital">Zahran.</span>
-		</h1>
-
-		<p class="hero__deck">
-			Software engineer, compulsive tinkerer, and builder of the
-			overly-specific. I make desktop apps that push hardware,
-			embedded systems that live in kitchens and bedrooms, and
-			ML tools for the things I love.
-		</p>
 	</div>
 
-	<div class="hero__meta">
-		<div class="hero__meta-cell">
-			<span class="mono">Currently</span>
-			<span class="val">Software Engineer, <a href="https://about.meta.com/realitylabs/" target="_blank" rel="noopener">Meta / Reality Labs ↗</a></span>
-		</div>
-		<div class="hero__meta-cell">
-			<span class="mono">Education</span>
-			<span class="val">B.S. Computer Science, UC Irvine</span>
-		</div>
-		<div class="hero__meta-cell">
-			<span class="mono">Working In</span>
-			<span class="val">Python · TypeScript · React · Embedded C</span>
-		</div>
-		<div class="hero__meta-cell">
-			<span class="mono">Elsewhere</span>
-			<span class="val">
-				<a href="https://github.com/belalzahran" target="_blank" rel="noopener">GitHub</a> ·
-				<a href="https://www.linkedin.com/in/belal-zahran-957886210/" target="_blank" rel="noopener">LinkedIn</a>
-			</span>
+	<!-- ==================== MARQUEE ==================== -->
+	<div class="marquee" aria-hidden="true">
+		<div class="marquee__track">
+			<span>Now building — Finslik</span>
+			<span>Life Dashboard</span>
+			<span>Remote GPU Pipeline</span>
+			<span>Quran Semantic Search</span>
+			<span>Webber</span>
+			<span>Now building — Finslik</span>
+			<span>Life Dashboard</span>
+			<span>Remote GPU Pipeline</span>
+			<span>Quran Semantic Search</span>
+			<span>Webber</span>
 		</div>
 	</div>
 </header>
-
-<!-- ==================== MARQUEE ==================== -->
-<div class="marquee" aria-hidden="true">
-	<div class="marquee__track">
-		<span>Now building — Finslik</span>
-		<span>Life Dashboard</span>
-		<span>Remote GPU Pipeline</span>
-		<span>Quran Semantic Search</span>
-		<span>Webber</span>
-		<span>Now building — Finslik</span>
-		<span>Life Dashboard</span>
-		<span>Remote GPU Pipeline</span>
-		<span>Quran Semantic Search</span>
-		<span>Webber</span>
-	</div>
-</div>
 
 <!-- ==================== ABOUT ==================== -->
 <section class="section wrap" id="about">
 	<div class="about__inner">
 		<div class="about__label">
-			<span class="mono">§ 01 &nbsp; About</span>
+			<span class="mono">Sec. 01 · About</span>
 		</div>
 		<div class="about__body reveal">
 			<p>
@@ -122,10 +120,12 @@
 </section>
 
 <!-- ==================== WORK ==================== -->
-<section class="section wrap" id="work">
-	<div class="sec-head reveal">
-		<h2>Selected Work</h2>
-		<span class="mono">§ 02 &nbsp; 2023 — Present</span>
+<section class="section" id="work">
+	<div class="wrap">
+		<div class="sec-head reveal">
+			<h2>Selected Work</h2>
+			<span class="mono">Sec. 02 · 2021 — Present</span>
+		</div>
 	</div>
 
 	<div class="work">
@@ -134,7 +134,7 @@
 		<article class="work__item reveal">
 			<div class="work__num">01</div>
 			<div class="work__main">
-				<h3 class="work__name"><a href="https://github.com/belalzahran" target="_blank" rel="noopener">Remote GPU Pipeline <em class="ital serif-italic">—&nbsp;Inference Over SSH</em></a></h3>
+				<h3 class="work__name"><a href="https://github.com/belalzahran" target="_blank" rel="noopener">Remote GPU Pipeline <em>Inference Over SSH</em></a></h3>
 				<p class="work__desc">
 					A PyQt5 desktop tool that offloads ONNX inference to a Windows
 					RTX&nbsp;3080 across the LAN. Zero disk writes on the remote —
@@ -154,7 +154,7 @@
 		<article class="work__item reveal">
 			<div class="work__num">02</div>
 			<div class="work__main">
-				<h3 class="work__name"><a href="https://github.com/belalzahran" target="_blank" rel="noopener">Life Dashboard <em class="ital serif-italic">—&nbsp;Bedroom TV</em></a></h3>
+				<h3 class="work__name"><a href="https://github.com/belalzahran" target="_blank" rel="noopener">Life Dashboard <em>Bedroom TV</em></a></h3>
 				<p class="work__desc">
 					An always-on personal dashboard running on a Raspberry&nbsp;Pi,
 					displayed on my bedroom TV. Calendar, email, prayer times, news,
@@ -174,10 +174,10 @@
 		<article class="work__item reveal">
 			<div class="work__num">03</div>
 			<div class="work__main">
-				<h3 class="work__name"><a href="https://github.com/belalzahran" target="_blank" rel="noopener">Qur'an Semantic Search <em class="ital serif-italic">—&nbsp;Meaning, Not Words</em></a></h3>
+				<h3 class="work__name"><a href="https://github.com/belalzahran" target="_blank" rel="noopener">Qur'an Semantic Search <em>Meaning, Not Words</em></a></h3>
 				<p class="work__desc">
 					Type a concept in English; get meaning-matched verses across all
-					6,236 ayahs. Fine-tuned <span class="mono" style="font-size:0.8em">multilingual-e5-large-instruct</span>
+					6,236 ayahs. Fine-tuned <span class="mono">multilingual-e5-large-instruct</span>
 					on 12,440 training pairs, indexed with FAISS, served from FastAPI.
 				</p>
 			</div>
@@ -193,7 +193,7 @@
 		<article class="work__item reveal">
 			<div class="work__num">04</div>
 			<div class="work__main">
-				<h3 class="work__name"><a href="https://github.com/belalzahran/finslik" target="_blank" rel="noopener">Finslik <em class="ital serif-italic">—&nbsp;Personal Finance</em></a></h3>
+				<h3 class="work__name"><a href="https://github.com/belalzahran/finslik" target="_blank" rel="noopener">Finslik <em>Personal Finance</em></a></h3>
 				<p class="work__desc">
 					A Monarch-Money-style aggregator I'm taking to production. Plaid for
 					banks, Coinbase for crypto, live-reconciled into a unified dashboard.
@@ -213,7 +213,7 @@
 		<article class="work__item reveal">
 			<div class="work__num">05</div>
 			<div class="work__main">
-				<h3 class="work__name"><a href="https://github.com/belalzahran" target="_blank" rel="noopener">Webber <em class="ital serif-italic">—&nbsp;Claude's Memory</em></a></h3>
+				<h3 class="work__name"><a href="https://github.com/belalzahran" target="_blank" rel="noopener">Webber <em>Claude's Memory</em></a></h3>
 				<p class="work__desc">
 					A Chrome extension + Flask server that feeds Claude seven days of
 					my browsing history so I can ask "open that Stanford tab from
@@ -233,7 +233,7 @@
 		<article class="work__item reveal">
 			<div class="work__num">06</div>
 			<div class="work__main">
-				<h3 class="work__name"><a href="kumonStudentTracker.html">Kumon Student Tracker <em class="ital serif-italic">—&nbsp;Still Running</em></a></h3>
+				<h3 class="work__name"><a href="kumonStudentTracker.html">Kumon Student Tracker <em>Still Running</em></a></h3>
 				<p class="work__desc">
 					A tablet sign-in, SMS parent-notification, and instructor
 					web dashboard I built as a freelance gig in 2023. Still in daily
@@ -245,17 +245,17 @@
 				<ul class="work__stack">
 					<li>Raspberry Pi</li><li>Python</li><li>Flask</li><li>MySQL</li><li>Twilio</li>
 				</ul>
+				<figure class="work__thumb">
+					<img src="data/Kumon/titleKumonTracker.jpg" alt="Kumon Student Tracker" loading="lazy">
+				</figure>
 			</div>
-			<figure class="work__thumb">
-				<img src="data/Kumon/titleKumonTracker.jpg" alt="Kumon Student Tracker" loading="lazy">
-			</figure>
 		</article>
 
 		<!-- 07 Vehicle VIN Flasher -->
 		<article class="work__item reveal">
 			<div class="work__num">07</div>
 			<div class="work__main">
-				<h3 class="work__name"><a href="vinflash.html">Vehicle VIN Flasher <em class="ital serif-italic">—&nbsp;Karma Automotive</em></a></h3>
+				<h3 class="work__name"><a href="vinflash.html">Vehicle VIN Flasher <em>Karma Automotive</em></a></h3>
 				<p class="work__desc">
 					An automated VIN-flashing device for Karma Automotive's
 					commercial vehicle program. Replaced a slow, expensive rig
@@ -267,17 +267,17 @@
 				<ul class="work__stack">
 					<li>Embedded C</li><li>Raspberry Pi</li><li>CAN</li><li>Python</li>
 				</ul>
+				<figure class="work__thumb">
+					<img src="data/VIN/titleVinFlash.jpg" alt="Vehicle VIN Flasher" loading="lazy">
+				</figure>
 			</div>
-			<figure class="work__thumb">
-				<img src="data/VIN/titleVinFlash.jpg" alt="Vehicle VIN Flasher" loading="lazy">
-			</figure>
 		</article>
 
 		<!-- 08 Medicine Dispenser -->
 		<article class="work__item reveal">
 			<div class="work__num">08</div>
 			<div class="work__main">
-				<h3 class="work__name"><a href="MedicineDispenser.html">Automated Medicine Dispenser <em class="ital serif-italic">—&nbsp;Built for my Grandmother</em></a></h3>
+				<h3 class="work__name"><a href="MedicineDispenser.html">Automated Medicine Dispenser <em>Built for my Grandmother</em></a></h3>
 				<p class="work__desc">
 					A scheduled pill dispenser that reminds, dispenses, and pages a
 					caretaker if a dose is missed. Real mechanical design, real
@@ -289,17 +289,17 @@
 				<ul class="work__stack">
 					<li>Arduino</li><li>Stepper Motors</li><li>C++</li>
 				</ul>
+				<figure class="work__thumb">
+					<img src="data/Medicine/4.jpg" alt="Medicine Dispenser" loading="lazy">
+				</figure>
 			</div>
-			<figure class="work__thumb">
-				<img src="data/Medicine/4.jpg" alt="Medicine Dispenser" loading="lazy">
-			</figure>
 		</article>
 
 		<!-- 09 Circuits -->
 		<article class="work__item reveal">
 			<div class="work__num">09</div>
 			<div class="work__main">
-				<h3 class="work__name"><a href="circuits.html">Breadboard Circuits <em class="ital serif-italic">—&nbsp;Fundamentals</em></a></h3>
+				<h3 class="work__name"><a href="circuits.html">Breadboard Circuits <em>Fundamentals</em></a></h3>
 				<p class="work__desc">
 					A collection of breadboard projects from my hardware
 					coursework at UCI — the foundation that made me comfortable
@@ -321,7 +321,7 @@
 <section class="section wrap" id="experience">
 	<div class="sec-head reveal">
 		<h2>Where I've Worked</h2>
-		<span class="mono">§ 03 &nbsp; 2023 — Present</span>
+		<span class="mono">Sec. 03 · 2023 — Present</span>
 	</div>
 
 	<div class="cv reveal">
@@ -330,9 +330,10 @@
 			<div class="cv__when">Apr 2025 — <b>Present</b></div>
 			<div>
 				<h3 class="cv__company">Meta</h3>
-				<p class="cv__title">Software Engineer · Contract</p>
+				<p class="cv__title">Software Engineer · Contract · Reality Labs, Horizon OS</p>
 				<ul class="cv__bullets">
-					<li>Building and maintaining the Reality Labs Bug Maker Tool used across the org</li>
+					<li>Building AI-powered tooling that automates generation of end-to-end Jest test suites for Horizon OS</li>
+					<li>Built and maintained BugMaker, the Reality Labs bug-filing tool used across the org - React feature work, complex form UI, and data visualizations</li>
 				</ul>
 			</div>
 		</article>
@@ -385,7 +386,7 @@
 <section class="section wrap" id="contact">
 	<div class="sec-head reveal">
 		<h2>Elsewhere</h2>
-		<span class="mono">§ 04 &nbsp; Get In Touch</span>
+		<span class="mono">Sec. 04 · Get In Touch</span>
 	</div>
 
 	<div class="elsewhere">
@@ -423,10 +424,10 @@
 </section>
 
 <!-- ==================== FOOTER ==================== -->
-<footer class="wrap foot">
+<footer class="foot">
 	<span class="mono">© 2026 · Belal Zahran · Lake Forest, CA</span>
 	<span class="arabic" aria-label="Alhamdulillah">الحمد لله</span>
-	<span class="mono">Set in Fraunces &amp; JetBrains Mono</span>
+	<span class="mono">Set in Archivo &amp; IBM Plex Mono</span>
 </footer>
 
 <!-- ==================== JS ==================== -->

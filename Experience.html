@@ -5,17 +5,14 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Experience — Belal Zahran</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Work history, education, and relevant coursework for Belal Zahran." />
+	<meta name="description" content="Work history, education, technical skills, and relevant coursework for Belal Zahran." />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,100..900,30..100,0..1;1,9..144,100..900,30..100,0..1&family=JetBrains+Mono:wght@400;500&family=Amiri+Quran&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=IBM+Plex+Mono:wght@400;500&family=Amiri+Quran&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/site.css">
 	<script src="config.js" defer></script>
 </head>
 <body>
-
-<div class="bg-glow" aria-hidden="true"></div>
-<div class="grain" aria-hidden="true"></div>
 
 <nav class="nav" role="navigation" aria-label="Primary">
 	<a href="index.html" class="nav__brand">belalzahran<i>.</i>com</a>
@@ -23,20 +20,22 @@
 		<a href="index.html#work" class="hide-sm">Work</a>
 		<a href="Experience.html" class="is-active">Experience</a>
 		<a href="contact.html">Contact</a>
-		<a href="#" class="nav__resume" id="resume-link" target="_blank" rel="noopener">Resume <span aria-hidden="true">↗</span></a>
+		<a href="#" id="resume-link" target="_blank" rel="noopener">Resume <span aria-hidden="true">↗</span></a>
 	</div>
 </nav>
 
-<header class="section wrap project-hero">
-	<span class="mono">§ Experience · 2023 — Present</span>
-	<h1>A <em>brief</em> résumé in longer form.</h1>
-	<p class="hero__deck" style="margin-top: 1.5rem;">
-		Four years across contract engineering, embedded hardware, and
-		production-grade software — from a tutoring-center floor to Reality Labs.
-	</p>
+<header class="plate">
+	<div class="wrap p-hero">
+		<span class="mono">Experience · 2023 — Present</span>
+		<h1>A brief résumé <em>in longer form.</em></h1>
+		<p class="hero__deck">
+			Four years across contract engineering, embedded hardware, and
+			production-grade software — from a tutoring-center floor to Reality Labs.
+		</p>
+	</div>
 </header>
 
-<section class="section wrap" style="padding-top: 2rem;">
+<section class="section wrap">
 	<div class="sec-head">
 		<h2>Work History</h2>
 		<span class="mono">Roles</span>
@@ -48,9 +47,11 @@
 			<div class="cv__when">Apr 2025 — <b>Present</b></div>
 			<div>
 				<h3 class="cv__company">Meta</h3>
-				<p class="cv__title">Software Engineer · Contract</p>
+				<p class="cv__title">Software Engineer · Contract · Reality Labs, Horizon OS</p>
 				<ul class="cv__bullets">
-					<li>Contributing to the development and maintenance of the Reality Labs Bug Maker Tool</li>
+					<li>Building AI-powered tooling that automates generation of end-to-end Jest test suites for Horizon OS</li>
+					<li>Built and maintained BugMaker, the Reality Labs bug-filing tool used across the org for QA workflows</li>
+					<li>React feature development and refactoring, complex form UI, feature migrations, and data visualizations inside Meta's web stack (Hack/XHP + React)</li>
 				</ul>
 			</div>
 		</article>
@@ -99,25 +100,86 @@
 	</div>
 </section>
 
+<section class="section wrap" id="skills">
+	<div class="sec-head">
+		<h2>Technical Skills</h2>
+		<span class="mono">Capabilities</span>
+	</div>
+
+	<div class="skills">
+		<div class="skills__cell">
+			<span class="mono">Languages</span>
+			<ul>
+				<li>TypeScript / JavaScript</li>
+				<li>Python</li>
+				<li>C / C++</li>
+				<li>PHP / Hack</li>
+				<li>SQL</li>
+			</ul>
+		</div>
+		<div class="skills__cell">
+			<span class="mono">Frontend</span>
+			<ul>
+				<li>React</li>
+				<li>Next.js</li>
+				<li>HTML / CSS</li>
+				<li>Electron</li>
+				<li>PyQt5</li>
+			</ul>
+		</div>
+		<div class="skills__cell">
+			<span class="mono">Backend</span>
+			<ul>
+				<li>Node.js / Express</li>
+				<li>Flask</li>
+				<li>FastAPI</li>
+				<li>MySQL / SQLite</li>
+				<li>Firebase</li>
+			</ul>
+		</div>
+		<div class="skills__cell">
+			<span class="mono">Embedded &amp; Hardware</span>
+			<ul>
+				<li>ESP32 / STM32 / ARM</li>
+				<li>Arduino / PlatformIO</li>
+				<li>Raspberry Pi</li>
+				<li>CAN / OBD2</li>
+			</ul>
+		</div>
+		<div class="skills__cell">
+			<span class="mono">Tools &amp; Infra</span>
+			<ul>
+				<li>Git</li>
+				<li>Docker</li>
+				<li>Vercel</li>
+				<li>Linux / macOS</li>
+				<li>Claude Code</li>
+			</ul>
+		</div>
+	</div>
+</section>
+
 <section class="section wrap" id="education">
 	<div class="sec-head">
 		<h2>Education</h2>
 		<span class="mono">UC Irvine · 2020 — 2024</span>
 	</div>
 
-	<article class="cv__role">
-		<div class="cv__when">2020 — 2024</div>
-		<div>
-			<h3 class="cv__company">University of California, Irvine</h3>
-			<p class="cv__title">B.S. Computer Science</p>
-			<ul class="cv__bullets">
-				<li>Focused on systems, AI, and software engineering coursework</li>
-				<li>Hardware fundamentals via breadboard circuit labs (ICS 51)</li>
-			</ul>
-		</div>
-	</article>
+	<div class="cv">
+		<article class="cv__role">
+			<div class="cv__when">2020 — 2024</div>
+			<div>
+				<h3 class="cv__company">University of California, Irvine</h3>
+				<p class="cv__title">B.S. Computer Science</p>
+				<ul class="cv__bullets">
+					<li>Focused on systems, AI, and software engineering coursework</li>
+					<li>Hardware fundamentals via breadboard circuit labs (ICS 51)</li>
+				</ul>
+			</div>
+		</article>
+	</div>
 
-	<h3 style="margin-top: 4rem; font-family: var(--font-display); font-style: italic; font-weight: 500; font-variation-settings: &quot;opsz&quot; 144, &quot;SOFT&quot; 100, &quot;WONK&quot; 1; color: var(--accent); font-size: 1.75rem; letter-spacing: -0.02em;">Relevant Coursework</h3>
+	<h3 class="courses-title">Relevant Coursework</h3>
 	<ul class="courses">
 		<li><b>CS 161</b> &nbsp; Design &amp; Analysis of Algorithms</li>
 		<li><b>CS 163</b> &nbsp; Graph Algorithms</li>
@@ -136,10 +198,10 @@
 	</ul>
 </section>
 
-<footer class="wrap foot">
+<footer class="foot">
 	<span class="mono">© 2026 · Belal Zahran · Lake Forest, CA</span>
 	<span class="arabic" aria-label="Alhamdulillah">الحمد لله</span>
-	<span class="mono">Set in Fraunces &amp; JetBrains Mono</span>
+	<span class="mono">Set in Archivo &amp; IBM Plex Mono</span>
 </footer>
 
 <script>

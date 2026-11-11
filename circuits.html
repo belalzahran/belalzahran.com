@@ -8,14 +8,11 @@
 	<meta name="description" content="Breadboard and microcontroller projects from Belal's hardware fundamentals coursework at UCI." />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,100..900,30..100,0..1;1,9..144,100..900,30..100,0..1&family=JetBrains+Mono:wght@400;500&family=Amiri+Quran&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=IBM+Plex+Mono:wght@400;500&family=Amiri+Quran&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/site.css">
 	<script src="config.js" defer></script>
 </head>
 <body>
-
-<div class="bg-glow" aria-hidden="true"></div>
-<div class="grain" aria-hidden="true"></div>
 
 <nav class="nav" role="navigation" aria-label="Primary">
 	<a href="index.html" class="nav__brand">belalzahran<i>.</i>com</a>
@@ -23,106 +20,100 @@
 		<a href="index.html#work" class="hide-sm is-active">Work</a>
 		<a href="Experience.html">Experience</a>
 		<a href="contact.html">Contact</a>
-		<a href="#" class="nav__resume" id="resume-link" target="_blank" rel="noopener">Resume <span aria-hidden="true">↗</span></a>
+		<a href="#" id="resume-link" target="_blank" rel="noopener">Resume <span aria-hidden="true">↗</span></a>
 	</div>
 </nav>
 
-<header class="section wrap project-hero">
-	<span class="mono">Project 09 · 2021 · Hardware Fundamentals</span>
-	<h1>Breadboard <em>Circuits</em>.</h1>
-	<p class="hero__deck" style="margin-top: 1.5rem; max-width: 62ch;">
-		A small collection of microcontroller projects I built while learning
-		hardware fundamentals at UCI. Wiring up an ATmega32 from scratch is
-		the kind of thing that makes every higher-level abstraction feel less
-		magical — in the best way.
-	</p>
-	<div class="project-hero__meta">
-		<div class="hero__meta-cell">
-			<span class="mono">Stack</span>
-			<span class="val">ATmega32 · Assembly · C · LEDs · Sensors</span>
-		</div>
-		<div class="hero__meta-cell">
-			<span class="mono">Course</span>
-			<span class="val">UC Irvine · Hardware Labs</span>
-		</div>
-		<div class="hero__meta-cell">
-			<span class="mono">Year</span>
-			<span class="val">2021</span>
+<header class="plate">
+	<div class="wrap p-hero">
+		<span class="mono">Project 09 · 2021 · Hardware Fundamentals</span>
+		<h1>Breadboard <em>Circuits</em></h1>
+		<p class="hero__deck" style="max-width: 62ch;">
+			A small collection of microcontroller projects I built while learning
+			hardware fundamentals at UCI. Wiring up an ATmega32 from scratch is
+			the kind of thing that makes every higher-level abstraction feel less
+			magical — in the best way.
+		</p>
+		<div class="p-meta">
+			<div class="hero__meta-cell">
+				<span class="mono">Stack</span>
+				<span class="val">ATmega32 · Assembly · C · LEDs · Sensors</span>
+			</div>
+			<div class="hero__meta-cell">
+				<span class="mono">Course</span>
+				<span class="val">UC Irvine · Hardware Labs</span>
+			</div>
+			<div class="hero__meta-cell">
+				<span class="mono">Year</span>
+				<span class="val">2021</span>
+			</div>
 		</div>
 	</div>
 </header>
 
-<!-- Memory Game -->
-<section class="section wrap">
-	<div class="sec-head">
-		<h2>Memory Game</h2>
-		<span class="mono">01 · ATmega32</span>
-	</div>
-	<div class="project-body" style="margin: 0 auto;">
-		<p>
-			Memorize and replicate the pattern of LEDs as the sequence grows
-			longer. The game state, timing, and button debouncing all run on a
-			bare ATmega32.
-		</p>
-		<p><a href="https://github.com/belalzahran/Atmega32-Memory-Game" target="_blank" rel="noopener">github.com/Atmega32-Memory-Game ↗</a></p>
-	</div>
-	<div class="project-media" style="max-width: 520px;">
-		<div class="video" style="padding-bottom: 175.9%;">
-			<script src="https://fast.wistia.com/embed/medias/uy6r1vt365.jsonp" async></script>
-			<script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
-			<div class="wistia_responsive_padding" style="padding:175.9% 0 0 0;position:relative;">
-				<div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
-					<div class="wistia_embed wistia_async_uy6r1vt365 seo=true videoFoam=true" style="height:100%;position:relative;width:100%">
-						<div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
-							<img src="https://fast.wistia.com/embed/medias/uy6r1vt365/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" />
-						</div>
+<div class="prose">
+	<h3>Memory Game</h3>
+	<p>
+		Memorize and replicate the pattern of LEDs as the sequence grows
+		longer. The game state, timing, and button debouncing all run on a
+		bare ATmega32.
+	</p>
+	<p><a href="https://github.com/belalzahran/Atmega32-Memory-Game" target="_blank" rel="noopener">github.com/Atmega32-Memory-Game ↗</a></p>
+</div>
+
+<div class="media" style="max-width: 34rem;">
+	<span class="mono">01 · ATmega32</span>
+	<div class="video">
+		<script src="https://fast.wistia.com/embed/medias/uy6r1vt365.jsonp" async></script>
+		<script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+		<div class="wistia_responsive_padding" style="padding:175.9% 0 0 0;position:relative;">
+			<div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+				<div class="wistia_embed wistia_async_uy6r1vt365 seo=true videoFoam=true" style="height:100%;position:relative;width:100%">
+					<div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
+						<img src="https://fast.wistia.com/embed/medias/uy6r1vt365/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" />
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</section>
+</div>
 
-<!-- Digital Voltmeter -->
-<section class="section wrap">
-	<div class="sec-head">
-		<h2>Digital Voltmeter</h2>
-		<span class="mono">02 · ATmega32</span>
-	</div>
-	<div class="project-body" style="margin: 0 auto;">
-		<p>
-			A circuit that reads voltage from a probe wire and continuously
-			tracks highest, lowest, and running-average values to an LCD.
-			A surprisingly tidy exercise in ADC sampling + display drivers.
-		</p>
-		<p><a href="https://github.com/belalzahran/Atmega32-Voltmeter" target="_blank" rel="noopener">github.com/Atmega32-Voltmeter ↗</a></p>
-	</div>
-	<div class="project-media" style="max-width: 720px;">
-		<div class="video" style="padding-bottom: 56.25%;">
-			<script src="https://fast.wistia.com/embed/medias/1t1pscyq0q.jsonp" async></script>
-			<script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
-			<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
-				<div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
-					<div class="wistia_embed wistia_async_1t1pscyq0q seo=true videoFoam=true" style="height:100%;position:relative;width:100%">
-						<div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
-							<img src="https://fast.wistia.com/embed/medias/1t1pscyq0q/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" />
-						</div>
+<div class="prose">
+	<h3>Digital Voltmeter</h3>
+	<p>
+		A circuit that reads voltage from a probe wire and continuously
+		tracks highest, lowest, and running-average values to an LCD.
+		A surprisingly tidy exercise in ADC sampling + display drivers.
+	</p>
+	<p><a href="https://github.com/belalzahran/Atmega32-Voltmeter" target="_blank" rel="noopener">github.com/Atmega32-Voltmeter ↗</a></p>
+</div>
+
+<div class="media" style="max-width: 46rem;">
+	<span class="mono">02 · ATmega32</span>
+	<div class="video">
+		<script src="https://fast.wistia.com/embed/medias/1t1pscyq0q.jsonp" async></script>
+		<script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+		<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+			<div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+				<div class="wistia_embed wistia_async_1t1pscyq0q seo=true videoFoam=true" style="height:100%;position:relative;width:100%">
+					<div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
+						<img src="https://fast.wistia.com/embed/medias/1t1pscyq0q/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" />
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</section>
+</div>
 
-<nav class="project-nav wrap" aria-label="Project navigation">
+<nav class="p-nav" aria-label="Project navigation">
 	<a href="vinflash.html">← VIN Flasher</a>
 	<a href="index.html#work">All Work →</a>
 </nav>
 
-<footer class="wrap foot">
+<footer class="foot">
 	<span class="mono">© 2026 · Belal Zahran</span>
 	<span class="arabic" aria-label="Alhamdulillah">الحمد لله</span>
-	<span class="mono">Set in Fraunces &amp; JetBrains Mono</span>
+	<span class="mono">Set in Archivo &amp; IBM Plex Mono</span>
 </footer>
 
 <script>
