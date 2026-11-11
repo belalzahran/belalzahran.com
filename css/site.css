@@ -107,9 +107,6 @@ figcaption { color: var(--muted); font-size: 0.875rem; line-height: 1.45; margin
 
 .shot { border-radius: var(--radius); border: 1px solid var(--line); background: var(--raised); width: 100%; }
 
-@media (min-width: 56rem) {
-	.hero__grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 4rem; align-items: start; }
-}
 
 /* ---------- Sections ---------- */
 
@@ -129,6 +126,8 @@ figcaption { color: var(--muted); font-size: 0.875rem; line-height: 1.45; margin
 .role:last-child { padding-bottom: 0; }
 .role__when { color: var(--muted); font-size: 0.9375rem; font-variant-numeric: tabular-nums; padding-top: 0.45rem; }
 .role h3 { font-size: clamp(1.5rem, 2.6vw, 1.875rem); }
+.role__co { display: flex; align-items: center; gap: 0.875rem; }
+.role__logo { width: 2.75rem; height: 2.75rem; flex: none; border-radius: 0.625rem; object-fit: contain; border: 1px solid var(--line); }
 .role h3 a { text-decoration: none; }
 .role h3 a:hover { text-decoration: underline; }
 .role__title { color: var(--accent); font-weight: 500; margin: 0.35rem 0 1rem; }
