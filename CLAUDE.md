@@ -6,9 +6,11 @@
 - **Hosting:** GitHub Pages (CNAME: belalzahran.com), deploy by pushing to `main`.
 - **GitHub:** https://github.com/belalzahran/belalzahran.com (public)
 - **Dev preview:** `python3 -m http.server 4173`
-- As of 2026-11-11 GitHub Pages is switched OFF on the repo (`has_pages: false`), which is why the live domain returns GitHub's 404.
-- DNS is fine (apex A records and `www` CNAME point at GitHub Pages).
-- To bring it back: repo Settings > Pages > deploy from `main` / root, then re-enter the custom domain.
+- LIVE again since 2026-11-11: Pages is on (source `main` / root), custom domain `belalzahran.com`, HTTPS enforced.
+- The domain is verified on Belal's GitHub account through the Namecheap TXT record `_github-pages-challenge-belalzahran`; keep that record.
+- If the custom domain is ever refused as "already taken", re-verify it under account Settings > Pages, then `gh api -X PUT repos/belalzahran/belalzahran.com/pages -f cname=belalzahran.com` and `gh api -X POST repos/belalzahran/belalzahran.com/pages/builds`.
+- Work history rows carry company logos in `data/logos/` (icons from each company's own site).
+- Every resume link opens in a new tab; the PDF at `data/Belal_Zahran_Resume.pdf` contains his phone number (he has been told; swap in a phone-free copy if he asks), and it must be re-copied whenever the resume changes.
 
 ## Pages
 - `index.html` - the whole portfolio on one page: hero, Experience, Projects, Workbench (photo collage), Skills, Education, Contact.
