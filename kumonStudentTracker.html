@@ -2,134 +2,17 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Kumon Student Tracker — Belal Zahran</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="A tablet-based student check-in system for a Kumon Tutoring Center, built on a Raspberry Pi with a Flask admin dashboard. Still in daily use." />
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=IBM+Plex+Mono:wght@400;500&family=Amiri+Quran&display=swap" rel="stylesheet">
+	<title>Moved - Belal Zahran</title>
+	<meta name="robots" content="noindex">
+	<meta http-equiv="refresh" content="0; url=pace.html">
+	<link rel="canonical" href="https://belalzahran.com/pace.html">
 	<link rel="stylesheet" href="css/site.css">
-	<script src="config.js" defer></script>
 </head>
 <body>
-
-<nav class="nav" role="navigation" aria-label="Primary">
-	<a href="index.html" class="nav__brand">belalzahran<i>.</i>com</a>
-	<div class="nav__links">
-		<a href="index.html#work" class="hide-sm is-active">Work</a>
-		<a href="Experience.html">Experience</a>
-		<a href="contact.html">Contact</a>
-		<a href="#" id="resume-link" target="_blank" rel="noopener">Resume <span aria-hidden="true">↗</span></a>
-	</div>
-</nav>
-
-<header class="plate">
-	<div class="wrap p-hero">
-		<span class="mono">Project 06 · 2023 · Embedded + Full-Stack</span>
-		<h1>Kumon Student <em>Tracker</em></h1>
-		<p class="hero__deck" style="max-width: 60ch;">
-			A tablet sign-in system, SMS parent-notification pipeline, and instructor
-			web dashboard built for a Kumon Tutoring Center — still in daily use
-			managing 150+ students.
-		</p>
-		<div class="p-meta">
-			<div class="hero__meta-cell">
-				<span class="mono">Role</span>
-				<span class="val">Contract Developer</span>
-			</div>
-			<div class="hero__meta-cell">
-				<span class="mono">Stack</span>
-				<span class="val">Raspberry Pi · Python · Flask · MySQL · Twilio</span>
-			</div>
-			<div class="hero__meta-cell">
-				<span class="mono">Repo</span>
-				<span class="val"><a href="https://github.com/belalzahran/KumonApplication" target="_blank" rel="noopener">Private — security</a></span>
-			</div>
-			<div class="hero__meta-cell">
-				<span class="mono">Status</span>
-				<span class="val">Shipped · in production</span>
-			</div>
-		</div>
-	</div>
-</header>
-
-<div class="prose">
-	<h3>The problem</h3>
-	<p>
-		In summer 2023 a local Kumon Tutoring Center asked me to replace their
-		paper-based student check-in — attendance and homework completion were
-		manually tracked, which made parent follow-up slow and logs hard to
-		query after a session.
-	</p>
-
-	<h3>What I built</h3>
-	<p>
-		A full stack sitting on a Raspberry Pi at the front desk: a tablet-facing
-		touch GUI for sign-in/sign-out, a MySQL database of student records, a
-		Twilio SMS pipeline for parent notifications, and a Flask web
-		interface so instructors could view live and historical data during and
-		after class.
-	</p>
-	<ul>
-		<li>Raspberry Pi + tablet kiosk at the entry</li>
-		<li>Admin-only GUI for adding, removing, and editing student records</li>
-		<li>MySQL schema designed to support multi-year lookups</li>
-		<li>Real-time monitoring display for instructors</li>
-		<li>Twilio integration for parent SMS on arrival / departure</li>
-	</ul>
-
-	<h3>What it's doing now</h3>
-	<p>
-		The system has been running continuously since deployment and is currently
-		serving a center with more than <em>150 active students</em>. I still get
-		the occasional "a cable came loose" text, which is a lot more fun than
-		it sounds.
-	</p>
-</div>
-
-<div class="media">
-	<span class="mono">Demo Video</span>
-	<div class="video">
-		<script src="https://fast.wistia.com/embed/medias/xusnpz5oo1.jsonp" async></script>
-		<script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
-		<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
-			<div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
-				<div class="wistia_embed wistia_async_xusnpz5oo1 seo=true videoFoam=true" style="height:100%;position:relative;width:100%">
-					<div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
-						<img src="https://fast.wistia.com/embed/medias/xusnpz5oo1/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" />
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="media">
-	<span class="mono">Application + Home Screen</span>
-	<div class="grid-2">
-		<img src="data/Kumon/app.jpg" alt="Kumon tablet app view" loading="lazy">
-		<img src="data/Kumon/homepage.jpg" alt="Kumon instructor dashboard" loading="lazy">
-	</div>
-</div>
-
-<nav class="p-nav" aria-label="Project navigation">
-	<a href="index.html#work">← All Work</a>
-	<a href="MedicineDispenser.html">Next: Medicine Dispenser →</a>
-</nav>
-
-<footer class="foot">
-	<span class="mono">© 2026 · Belal Zahran</span>
-	<span class="arabic" aria-label="Alhamdulillah">الحمد لله</span>
-	<span class="mono">Set in Archivo &amp; IBM Plex Mono</span>
-</footer>
-
-<script>
-if (typeof resumeLink !== 'undefined') {
-	var rl = document.getElementById('resume-link');
-	if (rl) rl.href = resumeLink;
-}
-</script>
-
+<main class="moved">
+	<p>This page moved.</p>
+	<p><a href="pace.html">Go to the PACE story</a></p>
+</main>
 </body>
 </html>

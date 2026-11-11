@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>PACE - Belal Zahran</title>
+	<meta name="description" content="How PACE grew from one Raspberry Pi kiosk at one Kumon center into check-in software adopted by dozens of Kumon centers across 9 US states.">
+	<meta name="author" content="Belal Zahran">
+	<meta name="theme-color" content="#0f1318">
+	<link rel="canonical" href="https://belalzahran.com/pace.html">
+	<meta property="og:title" content="PACE - Belal Zahran">
+	<meta property="og:description" content="How PACE grew from one Raspberry Pi kiosk at one Kumon center into check-in software adopted by dozens of Kumon centers across 9 US states.">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://belalzahran.com/pace.html">
+	<meta property="og:image" content="https://belalzahran.com/data/pace/live-board.png">
+	<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230f1318'/%3E%3Cpath d='M9 8h7.5a4 4 0 0 1 2.2 7.4A4.4 4.4 0 0 1 17 24H9zm3.4 3v3.6h3.7a1.8 1.8 0 0 0 0-3.6zm0 6.4V21h4.3a1.8 1.8 0 0 0 0-3.6z' fill='%23f0b35a'/%3E%3C/svg%3E">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="wrap top">
+	<a class="top__name" href="index.html">Belal Zahran</a>
+	<nav class="top__nav" aria-label="Primary">
+		<a href="index.html#experience">Experience</a>
+		<a href="index.html#projects">Projects</a>
+		<a href="index.html#workbench">Workbench</a>
+		<a href="index.html#contact">Contact</a>
+		<a class="top__resume" href="data/Belal_Zahran_Resume.pdf">Resume</a>
+	</nav>
+</header>
+
+<main id="main" class="wrap case">
+	<a class="case__back" href="index.html#projects">All projects</a>
+	<h1>PACE</h1>
+	<p class="case__lead">
+		Multi-tenant student check-in and attendance software for learning centers. Adopted by dozens
+		of Kumon centers across 9 US states, tracking 1,200+ students and 19,000+ check-ins across its
+		active centers.
+	</p>
+	<dl class="facts">
+		<div><dt>Role</dt><dd>Founder and sole developer</dd></div>
+		<div><dt>Timeline</dt><dd>Sept 2023 to present</dd></div>
+		<div><dt>Stack</dt><dd>React, TypeScript, Supabase, Stripe</dd></div>
+		<div><dt>Live at</dt><dd><a href="https://paceattend.com" rel="noopener">paceattend.com</a></dd></div>
+	</dl>
+
+	<figure class="block">
+		<img class="shot" src="data/pace/live-board.png" alt="PACE live board listing checked-in students as colored chips grouped by 30 and 60 minute sessions" width="1600" height="1000">
+		<figcaption>The live board: who is in class and for how long. Demo environment, all names are fictional.</figcaption>
+	</figure>
+
+	<div class="prose block">
+		<h2>Where it started</h2>
+		<p>
+			I had just finished an internship at Karma Automotive, where I built a
+			<a href="vinflash.html">VIN flasher</a> in Python on a touchscreen Raspberry Pi.
+			When my mom told me how hard it was to keep track of attendance at her Kumon center,
+			I saw a way to solve it with the same hardware, and offered to build and install it.
+		</p>
+
+		<h2>Version 1, built in my room</h2>
+		<p>The first version was a two-part system, written almost entirely by hand:</p>
+		<ul>
+			<li>A kiosk: Python on a touchscreen Raspberry Pi, hosting MySQL</li>
+			<li>A website: a Flask server and React front end for admin and rosters</li>
+			<li>Backups: a Bash script over SSH, saved to my home server</li>
+		</ul>
+		<p>
+			I mounted it on the wall of the center on January 8, 2024. It ran there for two years.
+		</p>
+	</div>
+
+	<div class="gallery block">
+		<figure>
+			<video class="clip land" src="data/pace/install.mp4" poster="data/pace/install-poster.jpg" width="640" height="360" muted loop playsinline preload="none" data-inview aria-label="Mounting the first kiosk on the wall with a drill"></video>
+			<figcaption>Install day, January 8, 2024.</figcaption>
+		</figure>
+		<figure>
+			<img class="land" src="data/pace/install-wall.jpg" alt="Small touchscreen kiosk glowing on the wall beside a window" width="900" height="506" loading="lazy">
+			<figcaption>One tablet, one center.</figcaption>
+		</figure>
+		<figure>
+			<img class="land" src="data/pace/v1-home.jpg" alt="Version 1 kiosk screen showing a large clock and a Begin button" width="676" height="424" loading="lazy">
+			<figcaption>The version 1 kiosk home screen.</figcaption>
+		</figure>
+		<figure>
+			<img class="land" src="data/pace/v1-checkout.jpg" alt="Version 1 kiosk check-out screen with a Check Out button" width="983" height="740" loading="lazy">
+			<figcaption>Checking out on version 1.</figcaption>
+		</figure>
+	</div>
+
+	<figure class="block">
+		<div class="video video--land">
+			<script src="https://fast.wistia.com/embed/medias/xusnpz5oo1.jsonp" async></script>
+			<script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+			<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+				<div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+					<div class="wistia_embed wistia_async_xusnpz5oo1 seo=true videoFoam=true" style="height:100%;position:relative;width:100%" title="Version 1 demo video">&nbsp;</div>
+				</div>
+			</div>
+		</div>
+		<figcaption>Walkthrough of version 1.</figcaption>
+	</figure>
+
+	<div class="prose block">
+		<h2>PACE today</h2>
+		<p>
+			In 2026 I rebuilt it and launched it commercially on React, TypeScript, Supabase
+			(Postgres, Auth, Realtime) and Stripe. Every center's data is isolated with Postgres
+			row-level security, verified by 186 automated tests. The Raspberry Pi is gone: the kiosk
+			is now a web app that runs on an iPad at the front desk.
+		</p>
+		<p>
+			Staff see the room live, and owners get the records behind it: attendance history,
+			and a list of regulars who have been away longer than their usual gap, so a call to the
+			parent happens before the student quietly stops coming.
+		</p>
+		<p>
+			I run the whole business solo: product, infrastructure, legal terms, pricing, support,
+			and outreach to center owners.
+		</p>
+		<p><a href="https://paceattend.com" rel="noopener">Visit paceattend.com</a></p>
+	</div>
+
+	<div class="gallery block">
+		<figure>
+			<img src="data/pace/kiosk.png" alt="iPad kiosk screen with the time and a Begin button" width="1280" height="800" loading="lazy">
+			<figcaption>The iPad kiosk.</figcaption>
+		</figure>
+		<figure>
+			<img src="data/pace/check-on.png" alt="Table of students to check on with last visit, days absent and usual gap" width="1500" height="587" loading="lazy">
+			<figcaption>Students to check on. Demo data, fictional names.</figcaption>
+		</figure>
+	</div>
+
+	<nav class="pager" aria-label="More projects">
+		<a href="circuits.html"><small>Previous project</small><b>Breadboard circuits</b></a>
+		<a href="vinflash.html"><small>Next project</small><b>VIN Flasher</b></a>
+	</nav>
+</main>
+
+<footer class="wrap foot">
+	<span>&copy; 2026 Belal Zahran</span>
+	<nav aria-label="Footer">
+		<a href="https://www.linkedin.com/in/belal-zahran-957886210/" rel="noopener">LinkedIn</a>
+		<a href="https://github.com/belalzahran" rel="noopener">GitHub</a>
+		<a href="https://paceattend.com" rel="noopener">PACE</a>
+		<a href="data/Belal_Zahran_Resume.pdf">Resume</a>
+		<a href="mailto:belalzahran@gmail.com">Email</a>
+	</nav>
+</footer>
+
+<script src="js/site.js" defer></script>
+</body>
+</html>

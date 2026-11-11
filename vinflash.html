@@ -2,134 +2,119 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>VIN Flasher — Belal Zahran</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="A touchscreen automated Vehicle Identification Number flasher built for Karma Automotive's commercial vehicle program." />
+	<title>VIN Flasher - Belal Zahran</title>
+	<meta name="description" content="A Python VIN flasher on a touchscreen Raspberry Pi, built for Karma Automotive's electrification kits.">
+	<meta name="author" content="Belal Zahran">
+	<meta name="theme-color" content="#0f1318">
+	<link rel="canonical" href="https://belalzahran.com/vinflash.html">
+	<meta property="og:title" content="VIN Flasher - Belal Zahran">
+	<meta property="og:description" content="A Python VIN flasher on a touchscreen Raspberry Pi, built for Karma Automotive's electrification kits.">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://belalzahran.com/vinflash.html">
+	<meta property="og:image" content="https://belalzahran.com/data/vin/assembly.jpg">
+	<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230f1318'/%3E%3Cpath d='M9 8h7.5a4 4 0 0 1 2.2 7.4A4.4 4.4 0 0 1 17 24H9zm3.4 3v3.6h3.7a1.8 1.8 0 0 0 0-3.6zm0 6.4V21h4.3a1.8 1.8 0 0 0 0-3.6z' fill='%23f0b35a'/%3E%3C/svg%3E">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=IBM+Plex+Mono:wght@400;500&family=Amiri+Quran&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/site.css">
-	<script src="config.js" defer></script>
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 
-<nav class="nav" role="navigation" aria-label="Primary">
-	<a href="index.html" class="nav__brand">belalzahran<i>.</i>com</a>
-	<div class="nav__links">
-		<a href="index.html#work" class="hide-sm is-active">Work</a>
-		<a href="Experience.html">Experience</a>
-		<a href="contact.html">Contact</a>
-		<a href="#" id="resume-link" target="_blank" rel="noopener">Resume <span aria-hidden="true">↗</span></a>
-	</div>
-</nav>
-
-<header class="plate">
-	<div class="wrap p-hero">
-		<span class="mono">Project 07 · 2023 · Embedded + Automotive</span>
-		<h1>Vehicle <em>VIN</em> Flasher</h1>
-		<p class="hero__deck" style="max-width: 62ch;">
-			A Raspberry-Pi-powered touchscreen flashing rig built for Karma
-			Automotive's commercial vehicle program — replacing a slow, expensive
-			setup with a handheld unit the technicians actually enjoyed using.
-		</p>
-		<div class="p-meta">
-			<div class="hero__meta-cell">
-				<span class="mono">Role</span>
-				<span class="val">Powertrain Controls Intern</span>
-			</div>
-			<div class="hero__meta-cell">
-				<span class="mono">Stack</span>
-				<span class="val">Raspberry Pi · Python · Tkinter · CAN / OBD2</span>
-			</div>
-			<div class="hero__meta-cell">
-				<span class="mono">Client</span>
-				<span class="val">Karma Automotive</span>
-			</div>
-			<div class="hero__meta-cell">
-				<span class="mono">Repo</span>
-				<span class="val"><a href="https://github.com/belalzahran/VinFlasher" target="_blank" rel="noopener">Private — proprietary</a></span>
-			</div>
-		</div>
-	</div>
+<header class="wrap top">
+	<a class="top__name" href="index.html">Belal Zahran</a>
+	<nav class="top__nav" aria-label="Primary">
+		<a href="index.html#experience">Experience</a>
+		<a href="index.html#projects">Projects</a>
+		<a href="index.html#workbench">Workbench</a>
+		<a href="index.html#contact">Contact</a>
+		<a class="top__resume" href="data/Belal_Zahran_Resume.pdf">Resume</a>
+	</nav>
 </header>
 
-<div class="prose">
-	<h3>What I designed</h3>
-	<p>
-		A self-contained VIN-flasher prototype intended to let Karma technicians
-		write VINs into freshly electrified vehicles without the existing
-		multi-thousand-dollar rig. The prototype consisted of a tablet
-		touchscreen bolted to a Raspberry Pi, a CAN bus reader wired to the
-		vehicle's OBD2 port, and a full Python + Tkinter application stack.
+<main id="main" class="wrap case">
+	<a class="case__back" href="index.html#projects">All projects</a>
+	<h1>VIN Flasher</h1>
+	<p class="case__lead">
+		A Python VIN flasher for Karma Automotive's electrification kits. It automates legal VIN
+		checks and cut flashing times by 30%.
 	</p>
+	<dl class="facts">
+		<div><dt>Role</dt><dd>Powertrain Controls Software Intern</dd></div>
+		<div><dt>Timeline</dt><dd>June 2023 to Sept 2023</dd></div>
+		<div><dt>Stack</dt><dd>Python, Tkinter, python-can, Raspberry Pi, CAN bus, OBD-II</dd></div>
+		<div><dt>Source</dt><dd>Proprietary to Karma</dd></div>
+	</dl>
 
-	<h3>Features shipped</h3>
-	<ul>
-		<li>Automatic key encryption / decryption on-device</li>
-		<li>Password-protected admin mode</li>
-		<li>Flashing history + VIN verification system</li>
-		<li>On-screen keyboard tailored for gloved factory use</li>
-		<li>CAN-bus diagnostic readback to confirm successful writes</li>
-	</ul>
-
-	<h3>Outcome</h3>
-	<p>
-		The prototype dramatically reduced flashing time per vehicle and cut
-		the required hardware cost by an order of magnitude — while giving
-		the operator a drastically simpler interface than the tools it replaced.
-	</p>
-</div>
-
-<div class="media">
-	<span class="mono">Hardware Walkthrough</span>
-	<p class="media__note">
-		Left → right: CAN bus reader wired to an OBD2 port, the touch tablet,
-		the back of the tablet with the Raspberry Pi mounted, and the full
-		physical assembly.
-	</p>
-	<div class="grid-2">
-		<img src="data/VIN/1.jpg" alt="CAN bus reader" loading="lazy">
-		<img src="data/VIN/2.jpg" alt="Tablet touch interface" loading="lazy">
-		<img src="data/VIN/3.jpg" alt="Raspberry Pi mounted on tablet back" loading="lazy">
-		<img src="data/VIN/4.jpg" alt="Full VIN flasher assembly" loading="lazy">
+	<div class="gallery gallery--4 block">
+		<figure><img class="tall" src="data/vin/can-reader.jpg" alt="USB CAN-bus reader on a white desk" width="1200" height="996" style="object-position:82% center"><figcaption>CAN-bus reader.</figcaption></figure>
+		<figure><img class="tall" src="data/vin/front.jpg" alt="Touchscreen on a folded aluminum stand" width="1200" height="1600"><figcaption>The touchscreen.</figcaption></figure>
+		<figure><img class="tall" src="data/vin/back.jpg" alt="Raspberry Pi mounted behind the touchscreen" width="1200" height="1600"><figcaption>Raspberry Pi behind it.</figcaption></figure>
+		<figure><img class="tall" src="data/vin/assembly.jpg" alt="Full assembly: touchscreen, CAN-bus reader and OBD-II connector" width="1200" height="1600" loading="lazy"><figcaption>Full assembly with the OBD-II harness.</figcaption></figure>
 	</div>
-</div>
 
-<div class="media" style="max-width: 38rem;">
-	<span class="mono">Demo Video</span>
-	<div class="video">
-		<script src="https://fast.wistia.com/embed/medias/zh4q6clw0g.jsonp" async></script>
-		<script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
-		<div class="wistia_responsive_padding" style="padding:133.33% 0 0 0;position:relative;">
-			<div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
-				<div class="wistia_embed wistia_async_zh4q6clw0g seo=true videoFoam=true" style="height:100%;position:relative;width:100%">
-					<div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
-						<img src="https://fast.wistia.com/embed/medias/zh4q6clw0g/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" />
-					</div>
+	<div class="prose block">
+		<h2>What I built</h2>
+		<p>
+			A self-contained flashing device: a touchscreen with a Raspberry Pi mounted behind it,
+			and an OBD-II harness with a Raspberry Pi CAN-bus reader that plugs into the vehicle.
+			The application is written in Python with Tkinter and talks to the car through
+			python-can. It was Karma's first consumer-friendly flashing method.
+		</p>
+
+		<h2>What it does</h2>
+		<ul>
+			<li>Automates the legal VIN checks before a VIN is written</li>
+			<li>Encrypts and decrypts keys on the device</li>
+			<li>Password-protected admin mode</li>
+			<li>Flashing history and VIN verification</li>
+			<li>On-screen keyboard for the touchscreen</li>
+			<li>Reads back over CAN to confirm a successful write</li>
+		</ul>
+
+		<h2>What came next</h2>
+		<p>
+			The same recipe, Python on a touchscreen Raspberry Pi, became the first version of
+			<a href="pace.html">PACE</a> a few months later.
+		</p>
+	</div>
+
+	<div class="gallery gallery--narrow block">
+		<figure>
+			<img src="data/vin/screen.jpg" alt="VIN flasher application asking for a password on the touchscreen" width="1179" height="997" loading="lazy">
+			<figcaption>The admin password prompt.</figcaption>
+		</figure>
+		<figure>
+			<div class="video ">
+			<script src="https://fast.wistia.com/embed/medias/zh4q6clw0g.jsonp" async></script>
+			<script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+			<div class="wistia_responsive_padding" style="padding:133.33% 0 0 0;position:relative;">
+				<div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+					<div class="wistia_embed wistia_async_zh4q6clw0g seo=true videoFoam=true" style="height:100%;position:relative;width:100%" title="VIN flasher demo video">&nbsp;</div>
 				</div>
 			</div>
 		</div>
+			<figcaption>Demo video.</figcaption>
+		</figure>
 	</div>
-</div>
 
-<nav class="p-nav" aria-label="Project navigation">
-	<a href="MedicineDispenser.html">← Medicine Dispenser</a>
-	<a href="circuits.html">Next: Breadboard Circuits →</a>
-</nav>
+	<nav class="pager" aria-label="More projects">
+		<a href="pace.html"><small>Previous project</small><b>PACE</b></a>
+		<a href="MedicineDispenser.html"><small>Next project</small><b>Medication Dispenser</b></a>
+	</nav>
+</main>
 
-<footer class="foot">
-	<span class="mono">© 2026 · Belal Zahran</span>
-	<span class="arabic" aria-label="Alhamdulillah">الحمد لله</span>
-	<span class="mono">Set in Archivo &amp; IBM Plex Mono</span>
+<footer class="wrap foot">
+	<span>&copy; 2026 Belal Zahran</span>
+	<nav aria-label="Footer">
+		<a href="https://www.linkedin.com/in/belal-zahran-957886210/" rel="noopener">LinkedIn</a>
+		<a href="https://github.com/belalzahran" rel="noopener">GitHub</a>
+		<a href="https://paceattend.com" rel="noopener">PACE</a>
+		<a href="data/Belal_Zahran_Resume.pdf">Resume</a>
+		<a href="mailto:belalzahran@gmail.com">Email</a>
+	</nav>
 </footer>
-
-<script>
-if (typeof resumeLink !== 'undefined') {
-	var rl = document.getElementById('resume-link');
-	if (rl) rl.href = resumeLink;
-}
-</script>
 
 </body>
 </html>

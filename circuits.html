@@ -2,126 +2,109 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Breadboard Circuits — Belal Zahran</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Breadboard and microcontroller projects from Belal's hardware fundamentals coursework at UCI." />
+	<title>Breadboard circuits - Belal Zahran</title>
+	<meta name="description" content="An LED memory game and a digital voltmeter built on a bare ATmega32.">
+	<meta name="author" content="Belal Zahran">
+	<meta name="theme-color" content="#0f1318">
+	<link rel="canonical" href="https://belalzahran.com/circuits.html">
+	<meta property="og:title" content="Breadboard circuits - Belal Zahran">
+	<meta property="og:description" content="An LED memory game and a digital voltmeter built on a bare ATmega32.">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://belalzahran.com/circuits.html">
+	<meta property="og:image" content="https://belalzahran.com/data/workbench/memory-game.jpg">
+	<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230f1318'/%3E%3Cpath d='M9 8h7.5a4 4 0 0 1 2.2 7.4A4.4 4.4 0 0 1 17 24H9zm3.4 3v3.6h3.7a1.8 1.8 0 0 0 0-3.6zm0 6.4V21h4.3a1.8 1.8 0 0 0 0-3.6z' fill='%23f0b35a'/%3E%3C/svg%3E">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=IBM+Plex+Mono:wght@400;500&family=Amiri+Quran&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/site.css">
-	<script src="config.js" defer></script>
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 
-<nav class="nav" role="navigation" aria-label="Primary">
-	<a href="index.html" class="nav__brand">belalzahran<i>.</i>com</a>
-	<div class="nav__links">
-		<a href="index.html#work" class="hide-sm is-active">Work</a>
-		<a href="Experience.html">Experience</a>
-		<a href="contact.html">Contact</a>
-		<a href="#" id="resume-link" target="_blank" rel="noopener">Resume <span aria-hidden="true">↗</span></a>
-	</div>
-</nav>
-
-<header class="plate">
-	<div class="wrap p-hero">
-		<span class="mono">Project 09 · 2021 · Hardware Fundamentals</span>
-		<h1>Breadboard <em>Circuits</em></h1>
-		<p class="hero__deck" style="max-width: 62ch;">
-			A small collection of microcontroller projects I built while learning
-			hardware fundamentals at UCI. Wiring up an ATmega32 from scratch is
-			the kind of thing that makes every higher-level abstraction feel less
-			magical — in the best way.
-		</p>
-		<div class="p-meta">
-			<div class="hero__meta-cell">
-				<span class="mono">Stack</span>
-				<span class="val">ATmega32 · Assembly · C · LEDs · Sensors</span>
-			</div>
-			<div class="hero__meta-cell">
-				<span class="mono">Course</span>
-				<span class="val">UC Irvine · Hardware Labs</span>
-			</div>
-			<div class="hero__meta-cell">
-				<span class="mono">Year</span>
-				<span class="val">2021</span>
-			</div>
-		</div>
-	</div>
+<header class="wrap top">
+	<a class="top__name" href="index.html">Belal Zahran</a>
+	<nav class="top__nav" aria-label="Primary">
+		<a href="index.html#experience">Experience</a>
+		<a href="index.html#projects">Projects</a>
+		<a href="index.html#workbench">Workbench</a>
+		<a href="index.html#contact">Contact</a>
+		<a class="top__resume" href="data/Belal_Zahran_Resume.pdf">Resume</a>
+	</nav>
 </header>
 
-<div class="prose">
-	<h3>Memory Game</h3>
-	<p>
-		Memorize and replicate the pattern of LEDs as the sequence grows
-		longer. The game state, timing, and button debouncing all run on a
-		bare ATmega32.
+<main id="main" class="wrap case">
+	<a class="case__back" href="index.html#projects">All projects</a>
+	<h1>Breadboard circuits</h1>
+	<p class="case__lead">
+		Two microcontroller projects I built while learning hardware fundamentals at UC Irvine.
+		Wiring up an ATmega32 from scratch makes every higher-level abstraction feel less magical.
 	</p>
-	<p><a href="https://github.com/belalzahran/Atmega32-Memory-Game" target="_blank" rel="noopener">github.com/Atmega32-Memory-Game ↗</a></p>
-</div>
+	<dl class="facts">
+		<div><dt>Context</dt><dd>UC Irvine hardware labs</dd></div>
+		<div><dt>Year</dt><dd>2021</dd></div>
+		<div><dt>Stack</dt><dd>ATmega32, C, LEDs, LCD, sensors</dd></div>
+	</dl>
 
-<div class="media" style="max-width: 34rem;">
-	<span class="mono">01 · ATmega32</span>
-	<div class="video">
-		<script src="https://fast.wistia.com/embed/medias/uy6r1vt365.jsonp" async></script>
-		<script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
-		<div class="wistia_responsive_padding" style="padding:175.9% 0 0 0;position:relative;">
-			<div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
-				<div class="wistia_embed wistia_async_uy6r1vt365 seo=true videoFoam=true" style="height:100%;position:relative;width:100%">
-					<div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
-						<img src="https://fast.wistia.com/embed/medias/uy6r1vt365/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" />
-					</div>
+	<div class="prose block">
+		<h2>Memory game</h2>
+		<p>
+			Memorize and repeat the pattern of LEDs as the sequence grows longer. Game state,
+			timing and button debouncing all run on a bare ATmega32.
+		</p>
+		<p><a href="https://github.com/belalzahran/Atmega32-Memory-Game" rel="noopener">Memory game source on GitHub</a></p>
+	</div>
+	<figure class="block" style="margin-top:1.5rem">
+		<div class="video video--portrait">
+			<script src="https://fast.wistia.com/embed/medias/uy6r1vt365.jsonp" async></script>
+			<script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+			<div class="wistia_responsive_padding" style="padding:175.9% 0 0 0;position:relative;">
+				<div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+					<div class="wistia_embed wistia_async_uy6r1vt365 seo=true videoFoam=true" style="height:100%;position:relative;width:100%" title="Memory game demo video">&nbsp;</div>
 				</div>
 			</div>
 		</div>
+		<figcaption>Memory game demo.</figcaption>
+	</figure>
+
+	<div class="prose block">
+		<h2>Digital voltmeter</h2>
+		<p>
+			A circuit that reads voltage from a probe wire and continuously tracks the highest,
+			lowest and running-average values on an LCD. A tidy exercise in ADC sampling and
+			display drivers.
+		</p>
+		<p><a href="https://github.com/belalzahran/Atmega32-Voltmeter" rel="noopener">Voltmeter source on GitHub</a></p>
 	</div>
-</div>
-
-<div class="prose">
-	<h3>Digital Voltmeter</h3>
-	<p>
-		A circuit that reads voltage from a probe wire and continuously
-		tracks highest, lowest, and running-average values to an LCD.
-		A surprisingly tidy exercise in ADC sampling + display drivers.
-	</p>
-	<p><a href="https://github.com/belalzahran/Atmega32-Voltmeter" target="_blank" rel="noopener">github.com/Atmega32-Voltmeter ↗</a></p>
-</div>
-
-<div class="media" style="max-width: 46rem;">
-	<span class="mono">02 · ATmega32</span>
-	<div class="video">
-		<script src="https://fast.wistia.com/embed/medias/1t1pscyq0q.jsonp" async></script>
-		<script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
-		<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
-			<div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
-				<div class="wistia_embed wistia_async_1t1pscyq0q seo=true videoFoam=true" style="height:100%;position:relative;width:100%">
-					<div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
-						<img src="https://fast.wistia.com/embed/medias/1t1pscyq0q/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" />
-					</div>
+	<figure class="block" style="margin-top:1.5rem">
+		<div class="video video--land">
+			<script src="https://fast.wistia.com/embed/medias/1t1pscyq0q.jsonp" async></script>
+			<script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+			<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+				<div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+					<div class="wistia_embed wistia_async_1t1pscyq0q seo=true videoFoam=true" style="height:100%;position:relative;width:100%" title="Digital voltmeter demo video">&nbsp;</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</div>
+		<figcaption>Voltmeter demo.</figcaption>
+	</figure>
 
-<nav class="p-nav" aria-label="Project navigation">
-	<a href="vinflash.html">← VIN Flasher</a>
-	<a href="index.html#work">All Work →</a>
-</nav>
+	<nav class="pager" aria-label="More projects">
+		<a href="MedicineDispenser.html"><small>Previous project</small><b>Medication Dispenser</b></a>
+		<a href="pace.html"><small>Next project</small><b>PACE</b></a>
+	</nav>
+</main>
 
-<footer class="foot">
-	<span class="mono">© 2026 · Belal Zahran</span>
-	<span class="arabic" aria-label="Alhamdulillah">الحمد لله</span>
-	<span class="mono">Set in Archivo &amp; IBM Plex Mono</span>
+<footer class="wrap foot">
+	<span>&copy; 2026 Belal Zahran</span>
+	<nav aria-label="Footer">
+		<a href="https://www.linkedin.com/in/belal-zahran-957886210/" rel="noopener">LinkedIn</a>
+		<a href="https://github.com/belalzahran" rel="noopener">GitHub</a>
+		<a href="https://paceattend.com" rel="noopener">PACE</a>
+		<a href="data/Belal_Zahran_Resume.pdf">Resume</a>
+		<a href="mailto:belalzahran@gmail.com">Email</a>
+	</nav>
 </footer>
-
-<script>
-if (typeof resumeLink !== 'undefined') {
-	var rl = document.getElementById('resume-link');
-	if (rl) rl.href = resumeLink;
-}
-</script>
 
 </body>
 </html>

@@ -2,127 +2,116 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Medicine Dispenser — Belal Zahran</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="An IoT automated medication dispenser built on an ESP32 with a Firebase-backed companion web app." />
+	<title>Medication Dispenser - Belal Zahran</title>
+	<meta name="description" content="A 3D-printed pill dispenser with an ESP32 inside and a web app synced through Firebase.">
+	<meta name="author" content="Belal Zahran">
+	<meta name="theme-color" content="#0f1318">
+	<link rel="canonical" href="https://belalzahran.com/MedicineDispenser.html">
+	<meta property="og:title" content="Medication Dispenser - Belal Zahran">
+	<meta property="og:description" content="A 3D-printed pill dispenser with an ESP32 inside and a web app synced through Firebase.">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://belalzahran.com/MedicineDispenser.html">
+	<meta property="og:image" content="https://belalzahran.com/data/dispenser/finished.jpg">
+	<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230f1318'/%3E%3Cpath d='M9 8h7.5a4 4 0 0 1 2.2 7.4A4.4 4.4 0 0 1 17 24H9zm3.4 3v3.6h3.7a1.8 1.8 0 0 0 0-3.6zm0 6.4V21h4.3a1.8 1.8 0 0 0 0-3.6z' fill='%23f0b35a'/%3E%3C/svg%3E">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=IBM+Plex+Mono:wght@400;500&family=Amiri+Quran&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/site.css">
-	<script src="config.js" defer></script>
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 
-<nav class="nav" role="navigation" aria-label="Primary">
-	<a href="index.html" class="nav__brand">belalzahran<i>.</i>com</a>
-	<div class="nav__links">
-		<a href="index.html#work" class="hide-sm is-active">Work</a>
-		<a href="Experience.html">Experience</a>
-		<a href="contact.html">Contact</a>
-		<a href="#" id="resume-link" target="_blank" rel="noopener">Resume <span aria-hidden="true">↗</span></a>
-	</div>
-</nav>
-
-<header class="plate">
-	<div class="wrap p-hero">
-		<span class="mono">Project 08 · 2022 · Hardware + IoT</span>
-		<h1>Automated Medication <em>Dispenser</em></h1>
-		<p class="hero__deck" style="max-width: 62ch;">
-			A wirelessly-controllable pill dispenser with an ESP32 brain, a
-			Firebase-synced companion web app, and a working dispense tray — the
-			cure for forgetting whether I took my meds this morning.
-		</p>
-		<div class="p-meta">
-			<div class="hero__meta-cell">
-				<span class="mono">Role</span>
-				<span class="val">Solo · Design → Build → Ship</span>
-			</div>
-			<div class="hero__meta-cell">
-				<span class="mono">Stack</span>
-				<span class="val">ESP32 · PlatformIO · C++ · Firebase · JavaScript</span>
-			</div>
-			<div class="hero__meta-cell">
-				<span class="mono">Repo</span>
-				<span class="val"><a href="https://github.com/belalzahran/MedicationDispenser" target="_blank" rel="noopener">github.com/MedicationDispenser ↗</a></span>
-			</div>
-			<div class="hero__meta-cell">
-				<span class="mono">Year</span>
-				<span class="val">2022</span>
-			</div>
-		</div>
-	</div>
+<header class="wrap top">
+	<a class="top__name" href="index.html">Belal Zahran</a>
+	<nav class="top__nav" aria-label="Primary">
+		<a href="index.html#experience">Experience</a>
+		<a href="index.html#projects">Projects</a>
+		<a href="index.html#workbench">Workbench</a>
+		<a href="index.html#contact">Contact</a>
+		<a class="top__resume" href="data/Belal_Zahran_Resume.pdf">Resume</a>
+	</nav>
 </header>
 
-<div class="prose">
-	<h3>Why I built it</h3>
-	<p>
-		I had trouble keeping a consistent medication and supplement routine —
-		the kind of thing where you find yourself at 11 PM wondering whether
-		you already took your meds that day. I built this to take the decision
-		out of it entirely.
+<main id="main" class="wrap case">
+	<a class="case__back" href="index.html#projects">All projects</a>
+	<h1>Medication Dispenser</h1>
+	<p class="case__lead">
+		A 3D-printed pill dispenser with an ESP32 inside and a companion web app synced through
+		Firebase. It answers one question: did I already take my meds today?
 	</p>
+	<dl class="facts">
+		<div><dt>Role</dt><dd>Design, print, wiring, firmware and web app</dd></div>
+		<div><dt>Year</dt><dd>2022</dd></div>
+		<div><dt>Stack</dt><dd>ESP32, PlatformIO, C++, Firebase, JavaScript</dd></div>
+		<div><dt>Source</dt><dd><a href="https://github.com/belalzahran/MedicationDispenser" rel="noopener">GitHub repository</a></dd></div>
+	</dl>
 
-	<h3>What it does</h3>
-	<p>
-		On a scheduled timer the dispenser rotates an internal compartment and
-		drops the correct dose into a retrievable tray, lighting an LED to
-		flag a pending pickup. Every dispense event is written to Firebase,
-		so a companion web app can show intake history, trigger ad-hoc
-		dispenses remotely, and keep a streak going.
-	</p>
-	<ul>
-		<li>Scheduled &amp; manual dispensing from a browser anywhere on the internet</li>
-		<li>LED indicator + dispense tray for physical feedback</li>
-		<li>Firebase Realtime DB for state + history</li>
-		<li>Hosting-side dashboard for user statistics</li>
-	</ul>
-</div>
-
-<div class="media">
-	<span class="mono">Build Photos</span>
-	<div class="grid-2">
-		<img src="data/Medicine/1.jpg" alt="Medicine dispenser view 1" loading="lazy">
-		<img src="data/Medicine/2.jpg" alt="Medicine dispenser view 2" loading="lazy">
-		<img src="data/Medicine/3.jpg" alt="Medicine dispenser view 3" loading="lazy">
-		<img src="data/Medicine/4.jpg" alt="Medicine dispenser view 4" loading="lazy">
+	<div class="gallery gallery--4 block">
+		<figure><img class="tall" src="data/dispenser/sketch.jpg" alt="Hand-drawn sketch with dimensions for the disk, fan, case and cover" width="1400" height="1050"><figcaption>The sketch.</figcaption></figure>
+		<figure><img class="tall" src="data/dispenser/printing.jpg" alt="3D printer printing the round base of the dispenser" width="1200" height="1600"><figcaption>Printing the base.</figcaption></figure>
+		<figure><img class="tall" src="data/dispenser/wiring.jpg" alt="Microcontroller and wiring inside the printed shell" width="1200" height="1600" loading="lazy"><figcaption>Wiring it up.</figcaption></figure>
+		<figure><img class="tall" src="data/dispenser/finished.jpg" alt="Finished dispenser with pills in its compartments and a green light over the tray" width="1179" height="1351" loading="lazy"><figcaption>Loaded and lit.</figcaption></figure>
 	</div>
-</div>
 
-<div class="media" style="max-width: 34rem;">
-	<span class="mono">Build + Demo Video</span>
-	<div class="video">
-		<script src="https://fast.wistia.com/embed/medias/vi92ax1fed.jsonp" async></script>
-		<script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
-		<div class="wistia_responsive_padding" style="padding:175.9% 0 0 0;position:relative;">
-			<div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
-				<div class="wistia_embed wistia_async_vi92ax1fed seo=true videoFoam=true" style="height:100%;position:relative;width:100%;">
-					<div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
-						<img src="https://fast.wistia.com/embed/medias/vi92ax1fed/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" />
-					</div>
+	<div class="prose block">
+		<h2>Why I built it</h2>
+		<p>
+			I had trouble keeping a consistent medication and supplement routine. It was the kind of
+			thing where you find yourself at 11 PM wondering whether you already took them that day.
+			I built this to take the question away.
+		</p>
+
+		<h2>What it does</h2>
+		<p>
+			On a schedule, the dispenser rotates an internal compartment and drops the dose into a
+			tray, lighting an LED to show a pickup is waiting. Every dispense is written to Firebase,
+			so the web app can show intake history and trigger a dispense remotely.
+		</p>
+		<ul>
+			<li>Scheduled and manual dispensing from a browser</li>
+			<li>LED indicator and dispense tray for physical feedback</li>
+			<li>Firebase Realtime Database for state and history</li>
+			<li>A hosted dashboard for usage statistics</li>
+		</ul>
+	</div>
+
+	<div class="gallery gallery--narrow block">
+		<figure>
+			<video class="clip" src="data/dispenser/demo.mp4" poster="data/dispenser/demo-poster.jpg" width="360" height="640" muted loop playsinline preload="none" data-inview aria-label="The dispenser lighting up next to the web app on a phone"></video>
+			<figcaption>Triggering a dispense from the phone.</figcaption>
+		</figure>
+		<figure>
+			<div class="video ">
+			<script src="https://fast.wistia.com/embed/medias/vi92ax1fed.jsonp" async></script>
+			<script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+			<div class="wistia_responsive_padding" style="padding:175.9% 0 0 0;position:relative;">
+				<div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+					<div class="wistia_embed wistia_async_vi92ax1fed seo=true videoFoam=true" style="height:100%;position:relative;width:100%" title="Medication dispenser build and demo video">&nbsp;</div>
 				</div>
 			</div>
 		</div>
+			<figcaption>Build and demo video.</figcaption>
+		</figure>
 	</div>
-</div>
 
-<nav class="p-nav" aria-label="Project navigation">
-	<a href="kumonStudentTracker.html">← Kumon Tracker</a>
-	<a href="vinflash.html">Next: VIN Flasher →</a>
-</nav>
+	<nav class="pager" aria-label="More projects">
+		<a href="vinflash.html"><small>Previous project</small><b>VIN Flasher</b></a>
+		<a href="circuits.html"><small>Next project</small><b>Breadboard circuits</b></a>
+	</nav>
+</main>
 
-<footer class="foot">
-	<span class="mono">© 2026 · Belal Zahran</span>
-	<span class="arabic" aria-label="Alhamdulillah">الحمد لله</span>
-	<span class="mono">Set in Archivo &amp; IBM Plex Mono</span>
+<footer class="wrap foot">
+	<span>&copy; 2026 Belal Zahran</span>
+	<nav aria-label="Footer">
+		<a href="https://www.linkedin.com/in/belal-zahran-957886210/" rel="noopener">LinkedIn</a>
+		<a href="https://github.com/belalzahran" rel="noopener">GitHub</a>
+		<a href="https://paceattend.com" rel="noopener">PACE</a>
+		<a href="data/Belal_Zahran_Resume.pdf">Resume</a>
+		<a href="mailto:belalzahran@gmail.com">Email</a>
+	</nav>
 </footer>
 
-<script>
-if (typeof resumeLink !== 'undefined') {
-	var rl = document.getElementById('resume-link');
-	if (rl) rl.href = resumeLink;
-}
-</script>
-
+<script src="js/site.js" defer></script>
 </body>
 </html>

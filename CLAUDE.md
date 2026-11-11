@@ -1,38 +1,83 @@
-# Personal Website — belalzahran.com
+# Personal Website - belalzahran.com
 
 ## Stack
-- Vanilla HTML5 + SASS/CSS + jQuery — static site, no build tools or bundler
-- Bootstrap 3 grid, Animate.css, Flexslider, jQuery Waypoints, Magnific Popup, Modernizr
-- **Hosting:** GitHub Pages (CNAME: belalzahran.com) — deploy by pushing to `main`
+- Plain static HTML + one stylesheet + one tiny script.
+- No build step, no bundler, no jQuery, no framework.
+- **Hosting:** GitHub Pages (CNAME: belalzahran.com), deploy by pushing to `main`.
 - **GitHub:** https://github.com/belalzahran/belalzahran.com (public)
 - **Dev preview:** `python3 -m http.server 4173`
+- As of 2026-11-11 GitHub Pages is switched OFF on the repo (`has_pages: false`), which is why the live domain returns GitHub's 404.
+- DNS is fine (apex A records and `www` CNAME point at GitHub Pages).
+- To bring it back: repo Settings > Pages > deploy from `main` / root, then re-enter the custom domain.
 
 ## Pages
-- `index.html` — project grid (landing)
-- `Experience.html` — work history
-- `contact.html`
-- 4 original project pages: `circuits.html`, `vinflash.html`, `kumonStudentTracker.html`, `MedicineDispenser.html`
+- `index.html` - the whole portfolio on one page: hero, Experience, Projects, Workbench (photo collage), Skills, Education, Contact.
+- `pace.html` - PACE story (version 1 on a Raspberry Pi, then the 2026 rebuild).
+- `vinflash.html` - Karma Automotive VIN flasher.
+- `MedicineDispenser.html` - 3D-printed ESP32 medication dispenser.
+- `circuits.html` - ATmega32 breadboard projects.
+- `Experience.html`, `contact.html`, `kumonStudentTracker.html` - meta-refresh redirect stubs so old URLs keep working.
+- They point to `index.html#experience`, `index.html#contact` and `pace.html`.
 
-## Design System (after 2026-07-06 redesign)
-- "Engineering Print" aesthetic - pure black & white, no accent color
-- Fonts: **Archivo** variable (wdth 62-125 / wght 100-900, via font-stretch + font-weight) + **IBM Plex Mono** (spec labels) + **Amiri Quran** (Arabic signature)
-- Palette: ink `#0a0a0a` / paper `#fafafa` / hairlines `#e2e2e2` (`#2b2b2b` on ink) / muted `#6f6f6f`
-- Signature motifs: black-plate hero with ghost-outline بلال, full-row black inversion on work-item hover, nav self-inverts via `mix-blend-mode: difference`, all photos `grayscale(1)` until hovered
-- Layout: black plate hero + marquee, white body, hairline title-block meta tables, prev/next p-nav on project pages
-- Stylesheet: `css/site.css`
-- Wistia embeds: `.video` wrapper must NOT carry its own padding-bottom - the inline `wistia_responsive_padding` div handles aspect ratio (double padding = dead space below the player)
-- Old Bootstrap/animate/flexslider CSS files still present but unreferenced — safe to delete if desired
+## Content rules (from Belal, 2026-11-11)
+- The resume (`data/Belal_Zahran_Resume.pdf`) is the source of truth for experience wording.
+- When the resume changes, copy the new PDF over that file and update the bullets in `index.html` to match.
+- Only facts from the resume, `~/job-hunt/profile.md`, or the presentation; never invent metrics.
+- Experience order: Meta, VistraTec, PACE, AONDevices, Karma Automotive, then education.
+- Spelling is exactly "VistraTec"; never "EyeDeal Tech", never "solo" for VistraPM.
+- PACE: "dozens of Kumon centers across 9 US states", "1,200+ students and 19,000+ check-ins".
+- Never a specific PACE center count, never a revenue claim.
+- Meta: keep internal system names generic.
+- No phone number and no home address anywhere in the HTML.
+- No em dashes in copy.
+- No typing animations, skill bars, emoji bullets or buzzword filler.
+- The screenshots of Finslik and the Life Dashboard from the presentation collage were left out on purpose because they show personal data.
+- The photo of a student at the iPad kiosk was left out on purpose.
 
-## Key Files
-- `config.js` — resume PDF link, single source of truth
-- `js/main.js` — scroll animations, mobile menu, fullheight, loader
-- `data/` — project images/videos
-- `sass/style.scss` → compiled `css/style.css` (legacy stylesheet)
+## Design system (dark rebuild, 2026-11-11)
+- Dark theme on a blue-graphite background, warm off-white text, and a single amber accent.
+- Palette: bg `#0f1318`, raised `#161b22`, hairline `#262d38`, text `#ecebe7`, muted `#9ba3ae`, accent `#f0b35a`.
+- All colors are CSS custom properties at the top of `css/site.css`.
+- Fonts: **Bricolage Grotesque** for headings and the name (the same family as the PACE logo), **IBM Plex Sans** for text.
+- Both load from Google Fonts with `display=swap`.
+- No monospace labels, no all-caps eyebrows, no numbered section markers.
+- The one loud element is the name in the hero, set at `min(14.5vw, 11.25rem)` on a single line.
+- Keep everything else quiet: hairline dividers, generous section padding, left-aligned text.
+- The amber accent is for the role line, job titles, the resume button and in-prose links only.
+- Layout width is `72rem` with a fluid gutter; two-column grids collapse to one column below `56rem` or `48rem`.
+- Experience rows are a date column plus content, because the dates are the structure.
+- Featured projects alternate image and text sides with `.feature--flip`.
+- The Workbench collage (`.board` and `.tile`) is rebuilt natively from the presentation collage.
+- Each tile carries its position as custom properties on a 1280 x 720 grid: `--x --y --w --h --r --z`.
+- At `48rem` and up the tiles are absolutely positioned, rotated and overlap like prints on a table; hover straightens a tile.
+- Below `48rem` the same tiles fall into a two-column masonry with no rotation.
+- Short muted clips use `<video data-inview>`; `js/site.js` plays them only while on screen.
+- With reduced motion on, clips stay paused and get native controls.
+- There is no scroll-reveal animation anywhere; do not add one.
+- Every `<img>` has real `width` and `height` attributes so nothing shifts while loading.
+- Focus is a 2px amber outline; there is a skip link on every page.
+- Project pages share one template: back link, `h1`, lead, `.facts` list, galleries, `.prose`, `.pager`.
+
+## Key files
+- `css/site.css` - the only stylesheet.
+- `js/site.js` - in-view video playback, nothing else.
+- `data/pace/`, `data/vin/`, `data/dispenser/`, `data/workbench/` - web-sized media (largest photo is about 320 KB).
+- `data/Belal_Zahran_Resume.pdf` - the resume linked from every page.
+- The header, footer and `<head>` are repeated by hand in each page; change all five when one changes.
+
+## Media sources
+- VIN flasher, dispenser and version 1 kiosk photos came from the previous site's `data/` folder, resized.
+- Collage clips, desk photo, install photos and PACE demo screenshots came from the 2026-11 RVT interview deck.
+- Workbench photos (printer, tools, parts drawers, bench supply) came from `~/Desktop/RVT Presentation Media/`.
+- PACE screenshots are from the local demo environment with fictional names; say so in the caption.
+- On macOS the filesystem is case-insensitive: never create `data/vin` while `data/VIN` exists, they are the same folder.
 
 ## Videos
-Embedded via Wistia with responsive padding-bottom trick. Different aspect ratios per project:
-- Portrait: `175.9%`, `133.33%`
-- Landscape: `56.25%`
+- Longer demos are Wistia embeds, kept from the old site.
+- The `.video` wrapper must NOT carry its own padding-bottom; the inline `wistia_responsive_padding` div sets the aspect ratio.
+- Padding values: portrait `175.9%` and `133.33%`, landscape `56.25%`.
 
-## 2026-04-16 Redesign Notes
-Replaced the freehtml5 template with the new Editorial Terminal design. All 7 pages rewritten. Added 5 new projects to the showcase alongside the original 4: FaceSwap (GPU-over-SSH), Life Dashboard, Qur'an Semantic Search, Finslik, Webber. No build step — pure static.
+## History
+- 2026-04-16: replaced the freehtml5 template with the "Editorial Terminal" design.
+- 2026-07-06: black-and-white "Engineering Print" redesign (checkpoint commit `648f8ca`).
+- 2026-11-11: dark rebuild on branch `redesign-dark-2026-11`; jQuery, Bootstrap, SASS and all template assets removed.
